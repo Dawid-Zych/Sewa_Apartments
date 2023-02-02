@@ -116,13 +116,24 @@ button.reservation {
 height: 40px;
 */
 
-button.reservation:hover {
+button.reservation:hover,
+.description a:hover {
+	border-color: #3dc9b3;
 	color: hsl(171, 56%, 51%);
 	background-color: white;
 }
+
+.option {
+	display: flex;
+	height: 100%;
+}
+
+.option.hide {
+	display: none;
+}
+
 .picture-apartments {
-	max-width: 100%;
-	height: 100px;
+	width: 50%;
 }
 
 .option {
