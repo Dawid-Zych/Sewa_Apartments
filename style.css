@@ -136,6 +136,96 @@ button.reservation:hover,
 	width: 50%;
 }
 
-.option {
+.description {
+	display: block;
+	flex-direction: column;
+	width: 50%;
+	background-color: white;
+	padding: 30px 70px;
+	font-size: 14px;
+	color: #8c9398;
+	text-align: justify;
+	line-height: 1.7;
+}
+
+.description h2 {
+	margin: 30px;
+	text-align: center;
+	color: #6e7579;
+	font-weight: bold;
+}
+
+.description p {
+	margin-bottom: 40px;
+}
+.description a {
+	padding: 0.563em 1.125em 0.813em;
+	cursor: pointer;
+	font-size: 16px;
+	border: none;
+	color: #ffffff;
+	background-color: #3dc9b3;
+	border: 2px solid #fff;
+	text-shadow: 0 0.075em 0.075em rgba(0, 0, 0, 0.5);
+	border-radius: 0.25em;
+}
+
+.slidebar {
+	position: relative;
+}
+
+.slide-picture {
+	width: 100%;
+}
+
+.buttons-slidebar {
 	display: flex;
+	position: absolute;
+	right: 18%;
+	top: 90%;
+}
+
+.fa-circle {
+	margin: 10px;
+	color: #6e7579;
+	cursor: pointer;
+}
+
+.fa-circle:hover {
+	background-color: black;
+	color: hsl(180, 3%, 7%);
+	border-radius: 50%;
+	border: none;
+}
+
+.fa-circle.active {
+	background-color: hsl(171, 56%, 51%);
+	color: hsl(171, 56%, 51%);
+	border-radius: 50%;
+}
+.fa-chevron {
+	position: absolute;	
+	font-size: 10px;
+	top: 60%;
+	width: 70px;
+	cursor: pointer;
+}
+
+.fa-chevron.right {
+	border-radius: 50%;
+	right: 1%;
+	width: 40px;
+	border: 1px solid black;
+	font-size: 40px;
+	color:black
+}
+
+.fa-chevron.left {
+	left: 1%;
+}
+
+.fa-chevron:hover {
+	background-color: rgb(66, 68, 69);
+	box-shadow: none;
+	
 }
