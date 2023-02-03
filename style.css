@@ -204,20 +204,15 @@ button.reservation:hover,
 	border-radius: 50%;
 }
 .fa-chevron {
-	position: absolute;	
-	font-size: 10px;
+	position: absolute;
 	top: 60%;
-	width: 70px;
+	width: 60px;
 	cursor: pointer;
+	border-radius: 50%;
 }
 
 .fa-chevron.right {
-	border-radius: 50%;
 	right: 1%;
-	width: 40px;
-	border: 1px solid black;
-	font-size: 40px;
-	color:black
 }
 
 .fa-chevron.left {
@@ -225,7 +220,7 @@ button.reservation:hover,
 }
 
 .fa-chevron:hover {
-	background-color: rgb(66, 68, 69);
-	box-shadow: none;
-	
+	background-color: #3dc9b3;
+	border-radius: 50%;
+	width: 65px;
 }
