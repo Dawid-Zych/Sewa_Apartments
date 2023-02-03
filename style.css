@@ -11,6 +11,7 @@ body {
 	align-items: center;
 	background-color: #f3f3f3;
 	font-family: 'Montserrat', sans-serif;
+	line-height: 1.7;
 }
 
 .container {
@@ -112,9 +113,6 @@ button.reservation {
 	text-shadow: 0 0.075em 0.075em rgba(0, 0, 0, 0.5);
 	border-radius: 0.25em;
 }
-/* vertical-align: middle;
-height: 40px;
-*/
 
 button.reservation:hover,
 .description a:hover {
@@ -151,8 +149,9 @@ button.reservation:hover,
 .description h2 {
 	margin: 30px;
 	text-align: center;
-	color: #6e7579;
+	color: #586269;
 	font-weight: bold;
+	letter-spacing: 2px;
 }
 
 .description p {
@@ -176,6 +175,7 @@ button.reservation:hover,
 
 .slide-picture {
 	width: 100%;
+	height: 500px;
 }
 
 .buttons-slidebar {
@@ -205,7 +205,7 @@ button.reservation:hover,
 }
 .fa-chevron {
 	position: absolute;
-	top: 60%;
+	top: 40%;
 	width: 60px;
 	cursor: pointer;
 	border-radius: 50%;
@@ -223,4 +223,60 @@ button.reservation:hover,
 	background-color: #3dc9b3;
 	border-radius: 50%;
 	width: 65px;
+}
+
+/* Sekcja o nas*/
+
+.about {
+	display: flex;
+}
+
+.text {
+	width: 50%;
+	padding: 45px 45px 10px 45px;
+}
+
+.text h2 {
+	text-align: center;
+	color: #353535;
+	letter-spacing: 2px;
+	color: #6e7579;
+	font-weight: bold;
+}
+
+.text p {
+	color: #586269;
+	font-size: 14px;
+	margin-top: 50px;
+	text-align: justify;
+}
+.courtyard {
+	width: 50%;
+	height: 600px;
+}
+
+.obj {
+	float: left;
+	height: 299px;
+	width: 299px;
+}
+
+.obj.p1 {
+	background: url(apartaments/courtyard-1.jpg);
+	background-size: cover;
+}
+
+.obj.p2 {
+	background: url(apartaments/courtyard-2.jpg);
+	background-size: cover;
+}
+
+.obj.p3 {
+	background: url(apartaments/courtyard-3.jpg);
+	background-size: cover;
+}
+
+.obj.p4 {
+	background: url(apartaments/courtyard-4.jpg);
+	background-size: cover;
 }
