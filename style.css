@@ -281,3 +281,37 @@ button.reservation:hover,
 	background: url(apartaments/courtyard-4.jpg);
 	background-size: cover;
 }
+
+.section5 {
+	display: flex;
+	background-color: #3dc9b3;
+	border-color: rgba(255, 255, 255, 0.25);
+	padding: 30px 0px 0px 0px;
+}
+
+.column {
+	background-color: #3dc9b3;
+	flex: 1 1 0px;
+	text-align: center;
+	border-right: 1px solid white;
+	color: white;
+	padding: 20px;
+}
+
+.column:last-child {
+	border: none;
+}
+
+.column img {
+	background-color: #3dc9b3;
+	width: 55px;
+	height: 60px;
+	margin-bottom: 10px;
+}
+
+.text5 p {
+	padding: 0 20px;
+	font-size: 14px;
+	background-color: #3dc9b3;
+}
+
