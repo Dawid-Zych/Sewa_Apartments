@@ -315,3 +315,14 @@ button.reservation:hover,
 	background-color: #3dc9b3;
 }
 
+.section6 {
+	margin: 0px;
+	padding: 0px;
+	min-height: 350px;
+	background-position: 50% -20px;
+	background-image: url(picture/Wawel-Castle-Krakow-Poland.jpg);
+	background-color: transparent;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
