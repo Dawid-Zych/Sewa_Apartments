@@ -326,3 +326,125 @@ button.reservation:hover,
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+
+.section7-form {
+	margin: 0px;
+	padding: 30px 20px 10px;
+	background-color: hsl(0, 0%, 98%);
+}
+
+form {
+	background-color: hsl(0, 0%, 98%);
+}
+.section7-form h2 {
+	text-align: center;
+	margin: 40px auto;
+	font-size: 16px;
+	font-weight: 300;
+	color: #353535;
+	letter-spacing: 2px;
+	background-color: inherit;
+}
+
+.x-container {
+	margin: 30px auto;
+	padding: 0px;
+	align-content: center;
+	text-align: center;
+	width: 100%;
+	background-color: hsl(0, 0%, 98%);
+}
+
+.field-control {
+	display: inline-block;
+	width: 30.1%;
+	margin-right: 3%;
+	background-color: hsl(0, 0%, 98%);
+}
+
+.field-control:last-child {
+	margin-right: 0;
+}
+
+.field-control input {
+	line-height: normal;
+	padding: 0 0.65em;
+	margin-bottom: 9px;
+	background: #fff;
+	width: 100%;
+	border: 1px solid #c1c1c1;
+	height: 50px;
+	color: #5a5a5a;
+	font-size: 15px;
+	border-radius: 0px;
+	box-shadow: none;
+	transition: border linear 0.4s, box-shadow linear 0.4s;
+	transition-property: border, box-shadow;
+	transition-duration: 0.2s, 0.2s;
+}
+
+.field-control input:focus,
+.field-control input:active {
+	border-color: rgba(0, 0, 0, 0.3);
+	outline: 0;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 0, 0.2);
+}
+.field-control input::placeholder,
+.field-control textarea::placeholder {
+	color: #c5c5c5;
+}
+
+p.error-text {
+	visibility: hidden;
+}
+.field-control:last-child {
+	display: block;
+	width: 100%;
+}
+.field-control textarea {
+	background: #fff;
+	border-radius: 0px;
+	box-shadow: none;
+	border: 1px solid #c1c1c1;
+	padding: 25px 10px;
+	color: #5a5a5a;
+	font-size: 15px;
+	display: inline-block;
+	width: 100%;
+	line-height: normal;
+	margin: 0;
+	outline: 0;
+	overflow: auto;
+	margin-bottom: 9px;
+	vertical-align: top;
+	height: auto;
+}
+
+.submitBtn {
+	background-color: hsl(0, 0%, 98%);
+}
+
+.submit {
+	background-color: #3dc9b3;
+	color: #fff;
+	outline: 0;
+	border: none;
+	text-shadow: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding: 12px 60px;
+	margin: 0 auto;
+	display: block;
+	margin-top: 35px;
+	margin-bottom: 10px;
+	border-radius: 0.25em;
+	line-height: 1.4;
+	transition: all 0.15s linear;
+	cursor: pointer;
+}
+
+.submit:hover {
+	background: transparent;
+	color: #3dc9b3;
+	border: 1px solid #3dc9b3;
+}
