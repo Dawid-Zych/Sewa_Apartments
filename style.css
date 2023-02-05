@@ -23,7 +23,7 @@ body {
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
-	align-items: center;	
+	align-items: center;
 	font-weight: 500;
 }
 
@@ -137,7 +137,7 @@ button.reservation:hover,
 .description {
 	display: block;
 	flex-direction: column;
-	width: 50%;	
+	width: 50%;
 	padding: 30px 70px;
 	font-size: 14px;
 	color: #8c9398;
@@ -176,7 +176,6 @@ button.reservation:hover,
 	display: flex;
 	width: 100%;
 	height: 500px;
-	
 }
 
 .buttons-slidebar {
@@ -210,6 +209,7 @@ button.reservation:hover,
 	width: 60px;
 	cursor: pointer;
 	border-radius: 50%;
+	background-color: #3dc9b3;
 }
 
 .fa-chevron.right {
@@ -257,9 +257,8 @@ button.reservation:hover,
 }
 
 .obj {
-	
 	float: right;
-	height: 307px;
+	height: 302px;
 	width: 307px;
 }
 
