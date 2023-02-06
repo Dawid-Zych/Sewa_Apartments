@@ -545,3 +545,35 @@ p.error-text {
 	max-width: 100%;
 }
 
+footer {
+	display: flex;
+	font-size: 15px;
+	text-align: center;
+	color: #7a7a7a;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 88%;
+	background-color: #f3f3f3;
+}
+
+.copyright {
+	font-size: 13px;
+	color: #4a4a4a;
+	background-color: #f3f3f3;
+}
+
+.author {
+	display: flex;
+	font-size: 13px;
+	color: #4a4a4a;
+	background-color: #f3f3f3;
+}
+
+.author p {
+	background-color: #f3f3f3;
+}
+.name {
+	font-weight: bold;
+	margin-left: 20px;
+	background-color: #f3f3f3;
+}
