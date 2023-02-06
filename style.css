@@ -89,6 +89,7 @@ a:hover {
 
 .content {
 	width: 100%;
+	background-color: #f3f3f3;
 }
 
 .city-picture-container {
@@ -215,7 +216,7 @@ button.reservation:hover,
 	width: 60px;
 	cursor: pointer;
 	border-radius: 50%;
-	background-color: #3dc9b3;
+	background-color: transparent;
 }
 
 .fa-chevron.right {
@@ -235,12 +236,16 @@ button.reservation:hover,
 /* Sekcja o nas*/
 
 .about {
-	display: flex;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
 }
 
 .text {
+	float: left;
 	width: 50%;
-	padding: 45px 45px 10px 45px;
+	padding: 45px 65px 10px 65px;
 }
 
 .text h2 {
@@ -251,21 +256,25 @@ button.reservation:hover,
 	font-weight: bold;
 }
 
+.about-text {
+	margin-top: 50px;
+}
 .text p {
 	color: #586269;
 	font-size: 14px;
-	margin-top: 50px;
 	text-align: justify;
+	margin: 0 0 1.313em;
 }
 .courtyard {
+	float: left;
 	width: 50%;
 	height: 600px;
 }
 
 .obj {
-	float: right;
-	height: 302px;
-	width: 307px;
+	float: left;
+	height: 299px;
+	width: 299px;
 }
 
 .obj.p1 {
@@ -344,7 +353,7 @@ form {
 }
 .section7-form h2 {
 	text-align: center;
-	margin: 40px auto;
+	margin: 20px auto;
 	font-size: 16px;
 	font-weight: 300;
 	color: #353535;
@@ -353,7 +362,6 @@ form {
 }
 
 .x-container {
-	margin: 30px auto;
 	padding: 0px;
 	align-content: center;
 	text-align: center;
@@ -442,7 +450,6 @@ p.error-text {
 	margin: 0 auto;
 	display: block;
 	margin-top: 35px;
-	margin-bottom: 10px;
 	border-radius: 0.25em;
 	line-height: 1.4;
 	transition: all 0.15s linear;
