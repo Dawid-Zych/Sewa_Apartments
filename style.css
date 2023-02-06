@@ -13,10 +13,16 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	background-color: #f3f3f3;
 	line-height: 1.7;
+	overflow: visible;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	color: #8c9398;
 }
 
 .container {
-	width: 80vw;
+	width: 88%;
+	max-width: 1200px;
 }
 
 .header {
