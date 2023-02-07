@@ -21,3 +21,30 @@ function stickyHeader() {
 		logoPct.style.width = '230px';
 	}
 }
+
+// SLIDER NA Flexie
+
+const ELS = (selector, par) => (par || document).querySelectorAll(selector);
+const EL = (selector, par) => (par || document).querySelector(selector);
+const mod = (n, m) => ((n % m) + m) % m;
+
+ELS('.slider-wrapper').forEach((x) => {
+	const EL_slider = EL('.slider', x);
+	const ELS_items = ELS('.item', x);
+	const sub = +(x.dataset.items ?? 1);
+	const tot = Math.ceil(ELS_items.length / sub);
+	let c = 0;
+
+	const anim = () => (EL_slider.style.transform = `translateX(-${c * 100}%)`);
+	const prev = () => ((c = mod(c - 1, tot)), anim());
+	const next = () => {
+		(c = mod(c + 1, tot)), anim();
+	};
+
+	EL('.left', x).addEventListener('click', prev);
+	EL('.right', x).addEventListener('click', next);
+	document.querySelector('.buttons-arrow').addEventListener('click', () => {
+		clearInterval(interval);
+	});
+	const interval = setInterval(next, 4000);
+});
