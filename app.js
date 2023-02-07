@@ -30,20 +30,19 @@ const mod = (n, m) => ((n % m) + m) % m;
 
 //
 selectAll('.slider-wrapper').forEach(() => {
-
 	const slide = select('.slider');
 
 	// electAll('.item') -- NOdelista slidów
 	// sprawdzamy ile mamy slajdów
+	const dupa = selectAll('.item');
+
 	const totalSlides = selectAll('.item').length;
 
 	//nasz licznik
 	let c = 0;
-
 	const anim = () => (slide.style.transform = `translateX(-${c * 100}%)`);
 	const prev = () => ((c = mod(c - 1, totalSlides)), anim());
 	const next = () => ((c = mod(c + 1, totalSlides)), anim());
-
 
 	// listener na nasze przyciski
 	select('.left').addEventListener('click', prev);
