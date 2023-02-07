@@ -24,27 +24,37 @@ function stickyHeader() {
 
 // SLIDER NA Flexie
 
-const ELS = (selector, par) => (par || document).querySelectorAll(selector);
-const EL = (selector, par) => (par || document).querySelector(selector);
+const selectAll = (selector) => document.querySelectorAll(selector);
+const select = (selector) => document.querySelector(selector);
 const mod = (n, m) => ((n % m) + m) % m;
 
-ELS('.slider-wrapper').forEach((x) => {
-	const EL_slider = EL('.slider', x);
-	const ELS_items = ELS('.item', x);
-	const sub = +(x.dataset.items ?? 1);
-	const tot = Math.ceil(ELS_items.length / sub);
+//
+selectAll('.slider-wrapper').forEach(() => {
+
+	const slide = select('.slider');
+
+	// electAll('.item') -- NOdelista slidów
+	// sprawdzamy ile mamy slajdów
+	const totalSlides = selectAll('.item').length;
+
+	//nasz licznik
 	let c = 0;
 
-	const anim = () => (EL_slider.style.transform = `translateX(-${c * 100}%)`);
-	const prev = () => ((c = mod(c - 1, tot)), anim());
-	const next = () => {
-		(c = mod(c + 1, tot)), anim();
-	};
+	const anim = () => (slide.style.transform = `translateX(-${c * 100}%)`);
+	const prev = () => ((c = mod(c - 1, totalSlides)), anim());
+	const next = () => ((c = mod(c + 1, totalSlides)), anim());
 
-	EL('.left', x).addEventListener('click', prev);
-	EL('.right', x).addEventListener('click', next);
+
+	// listener na nasze przyciski
+	select('.left').addEventListener('click', prev);
+	select('.right').addEventListener('click', next);
+
+	// czysci interwał gdy myszka na strzałce
+
 	document.querySelector('.buttons-arrow').addEventListener('click', () => {
 		clearInterval(interval);
 	});
+
+	// interwał na autoslide
 	const interval = setInterval(next, 4000);
 });
