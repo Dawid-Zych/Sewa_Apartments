@@ -16,7 +16,7 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="header">
+			<div class="header" id="header">
 				<div class="menu-left">
 					<a href="">Apartments</a>
 					<a href="">Gallery</a>
@@ -25,17 +25,20 @@
 					<img class="logoPct" src="/picture/logo.png" alt="logo apartaments" />
 				</div>
 				<div class="menu-right">
-					<a href="">Drive</a>
-					<a href="">Contact</a>
+					<a href="#dojazd">Drive</a>
+					<a href="#kontakt">Contact</a>
 					<div class="icons">
-						<a href="">
+						<a
+							href="https://www.facebook.com/profile.php?id=100057208789611"
+							target="_blank"
+						>
 							<img
 								class="icon"
 								src="/picture/2021_Facebook_icon.svg.png"
 								alt="Ikona Facebooka"
 						/></a>
 						<div class="language">
-							<a href=""
+							<a href="../"
 								><img
 									src="/picture/National_Flag_of_Poland.png"
 									alt="Flaga Polski"
@@ -58,21 +61,9 @@
 				<div class="reservation-field">
 					<button class="reservation">Book - Check prices and availability</button>
 				</div>
-				<div class="slidebar">
-					<div class="buttons-slidebar">
-						<p><i class="fa-regular fa-circle active"></i></p>
-						<p><i class="fa-regular fa-circle"></i></p>
-						<p><i class="fa-regular fa-circle"></i></p>
-						<p><i class="fa-regular fa-circle"></i></p>
-						<p><i class="fa-regular fa-circle"></i></p>
-					</div>
-					<div class="buttons-arrow">
-						<img src="/picture/next.png" class="fa-chevron right" alt="" />
-
-						<img src="/picture/prev.png" class="fa-chevron left" alt="" />
-					</div>
-					<div class="apartments-choice">
-						<div class="option">
+				<div class="slider-wrapper">
+					<div class="slider">
+						<div class="item">
 							<div class="picture-apartments">
 								<img
 									class="slide-picture"
@@ -83,89 +74,104 @@
 							<div class="description">
 								<h2>SEWA</h2>
 								<p>
-									SEWA is a modern and comfortable studio (35 m2) located on the
-									Ip. front building with windows overlooking a year-round green
-									garden. Up to 4 people can live in it comfortably and in
-									silence.
+									SEWA to nowoczesne i komfortowe studio (35 m2) położone na Ip.
+									budynku frontowego z oknami wychodzącymi na całoroczny zielony
+									ogródek. Wygodnie i w ciszy zamieszkają w nim nawet 4 osoby.
 								</p>
-								<a href="">See more</a>
+								<a href="">Zobacz więcej</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="picture-apartments">
+								<img
+									class="slide-picture"
+									src="/apartaments/SEWA I/sewa-1.jpg"
+									alt=""
+								/>
+							</div>
+							<div class="description">
+								<h2>SEWA I</h2>
+								<p>
+									Sewa I (35 m2) znajduje się na Ip. budynku oficyny. Całoroczny
+									zielony ogródek, balkon i panujący spokój zapewniają komfortowy
+									pobyt dla max. 4 osób. Na mieszkanie składają się: kuchnia
+									połączona.....
+								</p>
+								<a href="">Zobacz więcej</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="picture-apartments">
+								<img
+									class="slide-picture"
+									src="/apartaments/SEWA II/sewaII-1.jpg"
+									alt=""
+								/>
+							</div>
+							<div class="description">
+								<h2>SEWA II</h2>
+								<p>
+									SEWA II (60 m2)położony jest na parterze budynku oficyny, co
+									umożliwia korzystanie z mieszkania także dla osób poruszających
+									się na wózku. Okna wychodzą na przez cały rok zielony ogródek.
+									Mimo.....
+								</p>
+								<a href="">Zobacz więcej</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="picture-apartments">
+								<img
+									class="slide-picture"
+									src="/apartaments/SEWA MINI/sewaMini-2.jpg"
+									alt=""
+								/>
+							</div>
+							<div class="description">
+								<h2>SEWA MINI</h2>
+								<p>
+									Sewa MINI (19m2) znajduje się na Ip. budynku oficyny. Całoroczny
+									zielony ogródek, balkon i panujący spokój zapewniają komfortowy
+									pobyt dla max. 2 osób. Apartament składa się z sypialni z
+									rozkładaną.....
+								</p>
+								<a href="">Zobacz więcej</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="picture-apartments">
+								<img
+									class="slide-picture"
+									src="/apartaments/SEWA IV/sewaiV-5.jpg"
+									alt=""
+								/>
+							</div>
+							<div class="description">
+								<h2>SEWA IV</h2>
+								<p>
+									Dwupoziomowy apartament urządzony w nowoczesnym, industrialnym
+									stylu, z widokiem na ogród. Dysponuje jadalnią i w pełni
+									wyposażoną kuchnią. Posiada dwie sypialnie i dwie łazienki.
+									Apartament przeznaczony jest do komfortowego wypoczynku.....
+								</p>
+								<a href="">Zobacz więcej</a>
 							</div>
 						</div>
 					</div>
-					<div class="option hide">
-						<div class="picture-apartments">
-							<img
-								class="slide-picture"
-								src="/apartaments/SEWA I/sewa-1.jpg"
-								alt=""
-							/>
-						</div>
-						<div class="description">
-							<h2>SEWA I</h2>
-							<p>
-								Sewa I (35 m2) is located on Ip. outbuilding. A year-round green
-								garden, balcony and peace ensure a comfortable stay for max. 4
-								people. The apartment consists of:.....
-							</p>
-							<a href="">See more</a>
-						</div>
+					<div class="buttons-arrow">
+						<img src="/picture/next.png" class="fa-chevron right" alt="" />
+
+						<img src="/picture/prev.png" class="fa-chevron left" alt="" />
 					</div>
-					<div class="option hide">
-						<div class="picture-apartments">
-							<img
-								class="slide-picture"
-								src="/apartaments/SEWA II/sewaII-1.jpg"
-								alt=""
-							/>
-						</div>
-						<div class="description">
-							<h2>SEWA II</h2>
-							<p>
-								SEWA II (60 m2) is located on the ground floor of the outbuilding,
-								which allows the use of the apartment also for people in a
-								wheelchair. The windows overlook a.....
-							</p>
-							<a href="">See more</a>
-						</div>
-					</div>
-					<div class="option hide">
-						<div class="picture-apartments">
-							<img
-								class="slide-picture"
-								src="/apartaments/SEWA MINI/sewaMini-2.jpg"
-								alt=""
-							/>
-						</div>
-						<div class="description">
-							<h2>SEWA MINI</h2>
-							<p>
-								Sewa MINI (19m2) is located on IP. outbuilding. A year-round green
-								garden, balcony and peace ensure a comfortable stay for max. 2
-								people. The apartment consists of a bedroom with a.....
-							</p>
-							<a href="">See more</a>
-						</div>
-					</div>
-					<div class="option hide">
-						<div class="picture-apartments">
-							<img
-								class="slide-picture"
-								src="/apartaments/SEWA IV/sewaiV-5.jpg"
-								alt=""
-							/>
-						</div>
-						<div class="description">
-							<h2>SEWA IV</h2>
-							<p>
-								A two-level apartment decorated in a modern, industrial style,
-								overlooking the garden. It has a dining area and a fully equipped
-								kitchen. It has two bedrooms and two bathrooms. The apartment is
-								designed for comfortable rest.....
-							</p>
-							<a href="">See more</a>
-						</div>
-					</div>
+					<!-- <div class="buttons-slidebar">
+						<p><i class="fa-regular fa-circle active"></i></p>
+						<p><i class="fa-regular fa-circle"></i></p>
+						<p><i class="fa-regular fa-circle"></i></p>
+						<p><i class="fa-regular fa-circle"></i></p>
+						<p><i class="fa-regular fa-circle"></i></p>
+					</div> -->
 				</div>
+
 				<div class="about">
 					<div class="text">
 						<h2>About us</h2>
