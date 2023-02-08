@@ -24,23 +24,29 @@ function stickyHeader() {
 
 // SLIDER NA Flexie
 
+//
 const selectAll = (selector) => document.querySelectorAll(selector);
 const select = (selector) => document.querySelector(selector);
 const mod = (n, m) => ((n % m) + m) % m;
 
 //
 selectAll('.slider-wrapper').forEach(() => {
-	const slide = select('.slider');
+	const slideBox = select('.slider');
 
-	// electAll('.item') -- NOdelista slidów
+	// selectAll('.item') -- NOdelista slidów
 	// sprawdzamy ile mamy slajdów
 	const items = selectAll('.item');
 
 	const totalSlides = selectAll('.item').length;
+	console.log(totalSlides)
 
 	//nasz licznik
 	let c = 0;
-	const anim = () => (slide.style.transform = `translateX(-${c * 100}%)`);
+
+	//animacja na rodzicu slidow
+	const anim = () => (slideBox.style.transform = `translateX(-${c * 100}%)`);
+
+	// funkcja na przycisku
 	const prev = () => ((c = mod(c - 1, totalSlides)), anim());
 	const next = () => ((c = mod(c + 1, totalSlides)), anim());
 
