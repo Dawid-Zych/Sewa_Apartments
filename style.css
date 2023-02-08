@@ -148,8 +148,8 @@ button.reservation:hover,
 
 .slider-wrapper {
 	position: relative;
-	width: 100%;
 	overflow: hidden;
+	width: 100%;
 }
 
 .slider {
@@ -168,8 +168,6 @@ button.reservation:hover,
 }
 
 .description {
-	display: block;
-	flex-direction: column;
 	width: 50%;
 	padding: 30px 70px;
 	font-size: 14px;

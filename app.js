@@ -22,38 +22,48 @@ function stickyHeader() {
 	}
 }
 
-// SLIDER NA Flexie
+// // SLIDER NA Flexie
 
-const selectAll = (selector) => document.querySelectorAll(selector);
 const select = (selector) => document.querySelector(selector);
-const mod = (n, m) => ((n % m) + m) % m;
 
-//
-selectAll('.slider-wrapper').forEach(() => {
-	const slide = select('.slider');
 
-	// electAll('.item') -- NOdelista slidów
-	// sprawdzamy ile mamy slajdów
-	const items = selectAll('.item');
+const slides = document.querySelectorAll('.item');
+slides.forEach((x, indx) => {
+	x.style.transform = `translateX(${indx * 100}%)`;
+});
 
-	const totalSlides = selectAll('.item').length;
+let curSlide = 0;
+let maxSlide = slides.length - 1;
+console.log(maxSlide);
 
-	//nasz licznik
-	let c = 0;
-	const anim = () => (slide.style.transform = `translateX(-${c * 100}%)`);
-	const prev = () => ((c = mod(c - 1, totalSlides)), anim());
-	const next = () => ((c = mod(c + 1, totalSlides)), anim());
+const nextt = select('.right');
+const prevv = select('.left');
 
-	// listener na nasze przyciski
-	select('.left').addEventListener('click', prev);
-	select('.right').addEventListener('click', next);
-
-	// czysci interwał gdy myszka na strzałce
-
-	document.querySelector('.buttons-arrow').addEventListener('click', () => {
-		clearInterval(interval);
+nextt.addEventListener('click', function () {
+	// check if current slide is the last and reset current slide
+	if (curSlide === maxSlide) {
+		curSlide = 0;
+	} else {
+		curSlide++;
+	}
+	console.log(curSlide);
+	//   move slide by -100%
+	slides.forEach((slide, indx) => {
+		console.log(indx);
+		slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
 	});
+});
 
-	// interwał na autoslide
-	const interval = setInterval(next, 4000);
+prevv.addEventListener('click', function () {
+	// check if current slide is the first and reset current slide to last
+	if (curSlide === 0) {
+		curSlide = maxSlide;
+	} else {
+		curSlide--;
+	}
+
+	//   move slide by 100%
+	slides.forEach((slide, indx) => {
+		slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+	});
 });
