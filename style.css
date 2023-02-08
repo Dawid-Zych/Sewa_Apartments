@@ -13,18 +13,18 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	background-color: #f3f3f3;
 	line-height: 1.7;
-	overflow: visible;
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 400;
 	color: #8c9398;
 }
 
+/* NAV BAR */
+
 .header {
 	display: flex;
-	width: 100%;
+	width: 88%;
 	max-width: 1200px;
-	justify-content: space-between;
 	align-items: center;
 	font-weight: 500;
 	transition: all 0.5s ease;
@@ -39,17 +39,12 @@ z-index move it on slider */
 	top: 0;
 	max-width: 1200px;
 	min-height: 80px;
-	max-height: 90px;
+	max-height: 80px;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .container {
 	padding-top: 95px;
-}
-
-.container {
-	width: 88%;
-	max-width: 1200px;
 }
 
 a {
@@ -66,27 +61,35 @@ a:hover {
 .menu-left,
 .menu-right {
 	text-transform: uppercase;
-	align-content: space-between;
 }
 .menu-left {
-	margin-left: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 20px;
+	width: 40%;
+	align-items: center;
+	justify-content: center;
 }
 
 .menu-right {
 	display: flex;
-	flex-direction: row;
+	flex-wrap: wrap;
 	margin-right: 20px;
 	align-items: center;
-	align-content: center;
-	text-align: center;
+	width: 40%;
+	justify-content: flex-end;
 }
 
 .logo {
+	z-index: 3;
 	margin: 10px;
+	width: 20%;
+	text-align: center;
+	justify-content: center;
 }
 
 .logoPct {
-	width: 230px;
+	width: 200px;
 	transition: width 0.7s;
 }
 
@@ -98,7 +101,7 @@ a:hover {
 }
 
 .iconFlag {
-	border: 1px solid;
+	border: 1px solid black;
 }
 
 .language {
@@ -107,17 +110,40 @@ a:hover {
 	justify-content: end;
 }
 
+@media screen and (max-width: 824px) {
+	.header {
+		display: block;
+		margin-top: 20px;
+		border-top: 1px solid #f9f9f9;
+		padding-top: 15px;
+		margin-bottom: 20px;
+	}
+
+	.menu-left {
+	}
+	.menu-right {
+		visibility: hidden;
+	}
+}
+/* KONIEC HEADERA*/
+
+.container {
+	width: 88%;
+	max-width: 1200px;
+}
+
 .content {
 	width: 100%;
 	background-color: #f3f3f3;
 }
 
 .city-picture-container {
-	height: 450px;
+	height: 100%;
 }
 .city-picture {
+	display: flex;
 	width: 100%;
-	height: inherit;
+	height: 100%;
 }
 
 .reservation-field {

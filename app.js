@@ -18,7 +18,7 @@ function stickyHeader() {
 		logoPct.style.width = '130px';
 	} else {
 		header.classList.remove('sticky');
-		logoPct.style.width = '230px';
+		logoPct.style.width = '200px';
 	}
 }
 
