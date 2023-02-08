@@ -31,8 +31,10 @@ body {
 	min-height: 147px;
 }
 
-/* The sticky class is added to the header with JS when it reaches its scroll position */
+/* The sticky class is added to the header with JS when it reaches its scroll position
+z-index move it on slider */
 .sticky {
+	z-index: 9000;
 	position: fixed;
 	top: 0;
 	max-width: 1200px;
