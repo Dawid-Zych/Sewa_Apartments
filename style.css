@@ -20,15 +20,32 @@ body {
 }
 
 /* NAV BAR */
-
-.header {
+.nav-bar {
 	display: flex;
 	width: 88%;
 	max-width: 1200px;
+}
+
+.hamburger {
+	display: none;
+
+	text-align: right;
+}
+
+.fa-bars {
+	margin-right: 10px;
+	font-size: 30px;
+}
+
+.header {
+	border: solid 1px red;
+	display: flex;
 	align-items: center;
 	font-weight: 500;
 	transition: all 0.5s ease;
 	min-height: 147px;
+	width: 100%;
+	max-width: 1200px;
 }
 
 /* The sticky class is added to the header with JS when it reaches its scroll position
@@ -113,17 +130,16 @@ a:hover {
 
 @media screen and (max-width: 824px) {
 	.header {
-		display: block;
-		margin-top: 20px;
-		border-top: 1px solid #f9f9f9;
-		padding-top: 15px;
-		margin-bottom: 20px;
+		display: none;
 	}
-
-	.menu-left {
+	.hamburger {
+		display: flex;
 	}
-	.menu-right {
-		visibility: hidden;
+	.nav-bar {
+		justify-content: right;
+	}
+	.mobilelogo {
+		width: 100px;
 	}
 }
 /* KONIEC HEADERA*/

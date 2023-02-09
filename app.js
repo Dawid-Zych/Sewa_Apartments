@@ -4,7 +4,7 @@ window.onscroll = function () {
 };
 
 // Get the header
-const header = document.getElementById('header');
+const header = document.querySelector('.header');
 const logoPct = document.querySelector('.logoPct');
 
 // Get the offset position of the navbar
