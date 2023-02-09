@@ -62,6 +62,7 @@ a:hover {
 .menu-right {
 	text-transform: uppercase;
 }
+
 .menu-left {
 	display: flex;
 	flex-wrap: wrap;
