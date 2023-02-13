@@ -175,6 +175,7 @@ a:hover {
 		display: flex;
 	}
 }
+
 /* KONIEC HEADERA*/
 
 .container {
@@ -339,17 +340,18 @@ button.reservation:hover,
 	width: 65px;
 }
 
-/* Sekcja o nas*/
+/* Section 4 - about us */
 
-.about {
-	display: block;
+.section4 {
+	display: flex;
 	margin: 0px;
 	padding: 0px;
 	width: 100%;
+	float: left;
+	flex-wrap: wrap;
 }
 
-.text {
-	float: left;
+.section4 .text {
 	width: 50%;
 	padding: 45px 65px 10px 65px;
 }
@@ -362,7 +364,7 @@ button.reservation:hover,
 	font-weight: bold;
 }
 
-.about-text {
+.text .about-text {
 	margin-top: 50px;
 }
 .text p {
@@ -371,16 +373,15 @@ button.reservation:hover,
 	text-align: justify;
 	margin: 0 0 1.313em;
 }
-.courtyard {
-	float: left;
+
+.section4 .courtyard {
 	width: 50%;
 	height: 600px;
 }
 
 .obj {
+	display: flex;
 	float: left;
-	height: 299px;
-	width: 299px;
 }
 
 .obj.p1 {
@@ -401,6 +402,13 @@ button.reservation:hover,
 .obj.p4 {
 	background: url(apartaments/courtyard-4.jpg);
 	background-size: cover;
+}
+
+@media screen and (max-width: 1280px) {
+	.section4 .text,
+	.section4 .courtyard {
+		width: 100%;
+	}
 }
 
 .section5 {
