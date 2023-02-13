@@ -484,6 +484,12 @@ z-index move it on slider */
 	background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 824px) {
+	.section6 {
+		background-attachment: local;
+	}
+}
+
 .section7-form {
 	margin: 0px;
 	padding: 30px 20px 10px;
@@ -608,26 +614,27 @@ p.error-text {
 	transform: scale(1.2);
 }
 
-.section-8 {
+.section8 {
 	display: flex;
 	flex-direction: row;
 	margin: 0px;
 	padding: 45px 0px;
 	background-color: hsl(0, 0%, 39%);
+	justify-content: center;
+	text-align: center;
+	gap: 20px;
+	transition: all 0.5s ease;
 }
 
-.section-8-left {
-	text-align: right;
-	margin-right: 4%;
-	width: 48%;
+.section8-left {
 	background-color: hsl(0, 0%, 39%);
 }
-.x-img {
+.section8-left .x-img {
 	background-color: hsl(0, 0%, 39%);
 	max-width: 155px;
 }
 
-.section-8-right {
+.section8-right {
 	color: #fff;
 	font-size: 14px;
 	font-weight: 300;
@@ -636,29 +643,34 @@ p.error-text {
 	background-color: hsl(0, 0%, 39%);
 }
 
-.section-8-right p {
+.section8-right p {
 	background-color: hsl(0, 0%, 39%);
 	margin: 0 0 1.313em;
 }
 
-.section-8-right b {
+.section8-right b {
 	background-color: hsl(0, 0%, 39%);
 	font-size: 16px;
 	font-weight: 700;
 }
 
-.section-8-right a {
+.section8-right a {
 	margin: 0;
 	text-decoration: none;
 	background-color: transparent;
 	color: #fff;
 }
 
-.section-8-right a:hover {
+.section8-right a:hover {
 	outline: 0;
 	color: #3dc9b3;
 }
 
+@media screen and (max-width: 824px) {
+	.section8 {
+		flex-direction: column;
+	}
+}
 .drive {
 	display: flex;
 	flex-direction: column;
