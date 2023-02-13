@@ -65,10 +65,9 @@ selectAll('.slider-wrapper').forEach(() => {
 });
 
 const hamburger = document.querySelector('.fa-bars');
-const icon = document.querySelector('.seperate');
 
 const showNav = () => {
-	console.log('active');
+	const icon = document.querySelector('.seperate');
 	if (icon.style.display === 'none') {
 		icon.style.display = 'block';
 	} else {
