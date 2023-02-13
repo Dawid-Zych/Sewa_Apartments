@@ -57,6 +57,7 @@ body {
 }
 
 .hamburger .seperate {
+	display: none;
 	flex-direction: column;
 	margin: 0;
 }
