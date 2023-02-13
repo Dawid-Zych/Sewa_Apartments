@@ -69,3 +69,10 @@ const showNav = () => {
 	}
 };
 hambBtn.addEventListener('click', showNav);
+
+// reservation online yieldplanet
+const reservation = document.querySelector('.reservation');
+reservation.addEventListener('click', () => {
+	console.log('klik');
+	open('https://bookingengine.yieldplanet.com/book/BookingEngine.aspx?hotelId=5143', '_blank');
+});
