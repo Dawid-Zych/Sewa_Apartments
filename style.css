@@ -28,7 +28,6 @@ body {
 
 .hamburger {
 	display: none;
-
 	text-align: right;
 }
 
@@ -128,18 +127,60 @@ a:hover {
 	justify-content: end;
 }
 
+.seperate {
+	display: none;
+}
+
 @media screen and (max-width: 824px) {
 	.header {
 		display: none;
 	}
 	.hamburger {
+		width: 100%;		
+		position: relative;
 		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
 	}
+
 	.nav-bar {
-		justify-content: right;
+		display: flex;
 	}
 	.mobilelogo {
 		width: 100px;
+		margin: 10px;
+	}
+	.fa-bars {
+		cursor: pointer;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+	.fa-bars:hover {
+		color: #353535;
+	}
+
+	.links {
+		display: flex;
+		margin: 0 10px;
+	}
+
+	.seperate {
+		display: flex;
+		flex-direction: column;		
+		margin: 0;
+	}
+
+	.flexxx {
+		display: flex;
+		justify-content: space-between;
+		
+	}
+
+	.icons a {
+		padding: 0;
+		margin: 0;
+		margin-right: 10px;		
 	}
 }
 /* KONIEC HEADERA*/

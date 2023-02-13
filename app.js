@@ -63,3 +63,16 @@ selectAll('.slider-wrapper').forEach(() => {
 	// interwał na autoslide
 	const interval = setInterval(next, 4000);
 });
+
+const hamburger = document.querySelector('.fa-bars');
+const icon = document.querySelector('.seperate');
+
+const showNav = () => {
+	console.log('active');
+	if (icon.style.display === 'none') {
+		icon.style.display = 'block';
+	} else {
+		icon.style.display = 'none';
+	}
+};
+hamburger.addEventListener('click', showNav);
