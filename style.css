@@ -27,6 +27,27 @@ body {
 	max-width: 1200px;
 }
 
+/* adding fixed here becouse jump on widht when sticky is fixed*/
+.header {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	font-weight: 500;
+	transition: all 0.5s ease;
+	min-height: 147px;
+	max-width: 1200px;
+	position: fixed;
+	top: 0;
+	width: 88%;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position
+z-index move it on slider */
+.sticky {
+	z-index: 9000;
+	min-height: 80px;
+	max-height: 180px;
+}
 .hamburger {
 	display: none;
 	width: 88%;
@@ -35,9 +56,7 @@ body {
 	justify-content: space-between;
 	flex-direction: column;
 	z-index: 9000;
-	left: 50%;
-	top: 0%;
-	transform: translateX(-50%);
+	top: 0;
 }
 
 .hamburger .fa-bars {
@@ -77,29 +96,6 @@ body {
 	padding: 0;
 	margin: 0;
 	margin-right: 10px;
-}
-
-.header {
-	display: flex;
-	align-items: center;
-	font-weight: 500;
-	transition: all 0.5s ease;
-	min-height: 147px;
-	width: 100%;
-	max-width: 1200px;
-}
-
-/* The sticky class is added to the header with JS when it reaches its scroll position
-z-index move it on slider */
-.sticky {
-	z-index: 9000;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	max-width: 1200px;
-	max-width: inherit;
-	min-height: 80px;
-	max-height: 80px;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
