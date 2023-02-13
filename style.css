@@ -28,7 +28,8 @@ body {
 
 .hamburger {
 	display: none;
-	width: 88%;
+	width: inherit;
+	max-width: inherit;
 	position: relative;
 	justify-content: space-between;
 	flex-direction: column;
@@ -89,7 +90,8 @@ z-index move it on slider */
 	z-index: 9000;
 	position: fixed;
 	top: 0;
-	max-width: 1200px;
+	width: inherit;
+	max-width: inherit;
 	min-height: 80px;
 	max-height: 80px;
 }
