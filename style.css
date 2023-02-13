@@ -404,6 +404,8 @@ button.reservation:hover,
 
 .section5 {
 	display: flex;
+	width: 100%;
+	max-width: 1200px;
 	background-color: #3dc9b3;
 	border-color: rgba(255, 255, 255, 0.25);
 	padding: 30px 0px 0px 0px;
