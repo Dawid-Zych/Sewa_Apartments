@@ -28,7 +28,7 @@ body {
 
 .hamburger {
 	display: none;
-	width: 100%;
+	width: 88%;
 	position: relative;
 	justify-content: space-between;
 	flex-direction: column;
@@ -162,18 +162,13 @@ a:hover {
 	justify-content: end;
 }
 
-.seperate {
-	display: none;
-	flex-direction: column;
-	margin: 0;
-}
-
 @media screen and (max-width: 824px) {
 	.header {
 		display: none;
 	}
 	.hamburger {
 		display: flex;
+		position: fixed;
 	}
 }
 /* KONIEC HEADERA*/
