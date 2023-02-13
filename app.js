@@ -5,7 +5,7 @@ window.onscroll = function () {
 
 // Get the header
 const header = document.querySelector('.header');
-const logoPct = document.querySelector('.logoPct');
+const logoPct = document.querySelector('.logo-picture');
 
 // Get the offset position of the navbar
 const sticky = header.offsetTop;
@@ -27,7 +27,7 @@ const selectAll = (selector) => document.querySelectorAll(selector);
 const select = (selector) => document.querySelector(selector);
 const mod = (n, m) => ((n % m) + m) % m;
 
-selectAll('.slider-wrapper').forEach(() => {
+selectAll('.section3').forEach(() => {
 	const slideBox = select('.slider');
 
 	// selectAll('.item') -- NOdelista slidów
@@ -61,7 +61,7 @@ selectAll('.slider-wrapper').forEach(() => {
 // nav responsywne na btn
 const hambBtn = document.querySelector('.fa-bars');
 const showNav = () => {
-	const icon = document.querySelector('.seperate');
+	const icon = document.querySelector('.hamburger-menu');
 	if (icon.style.display === 'none') {
 		icon.style.display = 'block';
 	} else {
