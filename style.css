@@ -435,6 +435,12 @@ z-index move it on slider */
 	}
 }
 
+@media screen and (max-width: 824px) {
+	.section4 .text {
+		padding: 90px 35px 10px 35px;
+	}
+}
+
 .section5 {
 	display: flex;
 	width: 100%;
@@ -614,6 +620,19 @@ p.error-text {
 	transform: scale(1.2);
 }
 
+@media screen and (max-width: 824px) {
+	.section7-form {
+		display: flex;
+		flex-direction: column;
+		padding: 40px 20px 45px;
+	}
+
+	.field-control {
+		display: inline-block;
+		width: 100%;
+	}
+}
+
 .section8 {
 	display: flex;
 	flex-direction: row;
@@ -671,6 +690,7 @@ p.error-text {
 		flex-direction: column;
 	}
 }
+
 .drive {
 	display: flex;
 	flex-direction: column;
@@ -730,4 +750,13 @@ footer {
 	font-weight: bold;
 	margin-left: 20px;
 	background-color: #f3f3f3;
+}
+
+@media screen and (max-width: 824px) {
+	footer {
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
 }
