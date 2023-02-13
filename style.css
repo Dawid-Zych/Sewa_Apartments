@@ -22,6 +22,7 @@ body {
 /* NAV BAR */
 .nav-bar {
 	display: flex;
+	position: relative;
 	width: 88%;
 	max-width: 1200px;
 }
@@ -34,12 +35,15 @@ body {
 	justify-content: space-between;
 	flex-direction: column;
 	z-index: 9000;
+	left: 50%;
+	top: 0%;
+	transform: translateX(-50%);
 }
 
 .hamburger .fa-bars {
 	cursor: pointer;
-	position: fixed;
-	right: 60px;
+	position: absolute;
+	right: 20px;
 	top: 20px;
 	font-size: 30px;
 }
