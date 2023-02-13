@@ -28,18 +28,19 @@ body {
 
 .hamburger {
 	display: none;
-	width: inherit;
-	max-width: inherit;
-	position: relative;
+	width: 88%;
+	max-width: 1200px;
+	position: fixed;
 	justify-content: space-between;
 	flex-direction: column;
+	z-index: 9000;
 }
 
 .hamburger .fa-bars {
 	cursor: pointer;
-	position: absolute;
-	right: 10px;
-	top: 10px;
+	position: fixed;
+	right: 60px;
+	top: 20px;
 	font-size: 30px;
 }
 
@@ -90,7 +91,8 @@ z-index move it on slider */
 	z-index: 9000;
 	position: fixed;
 	top: 0;
-	width: inherit;
+	width: 100%;
+	max-width: 1200px;
 	max-width: inherit;
 	min-height: 80px;
 	max-height: 80px;
@@ -171,7 +173,6 @@ a:hover {
 	}
 	.hamburger {
 		display: flex;
-		position: fixed;
 	}
 }
 /* KONIEC HEADERA*/
