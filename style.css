@@ -349,7 +349,7 @@ z-index move it on slider */
 }
 
 .modal-backdrop {
-	background-color: #8c9398;
+	background-color: rgba(0, 0, 0, 0.4);
 	position: fixed;
 	top: 0;
 	left: 0;
