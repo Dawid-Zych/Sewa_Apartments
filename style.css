@@ -244,7 +244,7 @@ z-index move it on slider */
 }
 
 .modal {
-	display: none;
+	visibility: hidden;
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -253,6 +253,16 @@ z-index move it on slider */
 	z-index: 9999;
 	overflow: hidden;
 	outline: 0;
+	background-color: transparent;
+	transition: all 0.5s ease-in;
+	transition-timing-function: cubic-bezier(0.42, 0, 1, 1);
+	opacity: 0;
+}
+
+.active {
+	opacity: 1;
+	visibility: visible;
+	display: block;
 }
 
 .modal-open .modal {
@@ -261,7 +271,7 @@ z-index move it on slider */
 }
 .modal-dialog {
 	width: 80% !important;
-	position: relative;	
+	position: relative;
 	height: 80vh;
 	margin: 30px auto;
 }
@@ -339,13 +349,12 @@ z-index move it on slider */
 }
 
 .modal-backdrop {
+	background-color: #8c9398;
 	position: fixed;
 	top: 0;
-	right: 0;
-	bottom: 0;
 	left: 0;
+	right: 0;
 	z-index: 1040;
-	background-color: #8c9398;
 }
 
 .section3 {
