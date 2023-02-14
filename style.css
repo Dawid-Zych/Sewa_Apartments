@@ -567,6 +567,7 @@ z-index move it on slider */
 	border-color: rgba(255, 255, 255, 0.25);
 	padding: 30px 0px 0px 0px;
 	flex-wrap: wrap;
+	overflow: hidden;
 }
 
 .column {
@@ -577,8 +578,27 @@ z-index move it on slider */
 	color: white;
 	padding: 20px;
 	float: left;
+	animation: 1s ease-in-out both;
 }
 
+@keyframes scale {
+	0%,
+	20% {
+		transform: scale(1.2);
+	}
+	40% {
+		transform: scale(1);
+	}
+	60% {
+		transform: scale(1.2);
+	}
+	80% {
+		transform: scale(1);
+	}
+}
+.column:hover {
+	animation-name: scale;
+}
 .column:last-child {
 	border: none;
 }
