@@ -547,13 +547,15 @@ z-index move it on slider */
 	.section4 .text,
 	.section4 .courtyard {
 		width: 100%;
-		margin-bottom: 5px;
 	}
 }
 
 @media screen and (max-width: 824px) {
 	.section4 .text {
 		padding: 90px 35px 10px 35px;
+	}
+	.obj {
+		margin-bottom: 5px;
 	}
 }
 
