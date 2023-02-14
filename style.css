@@ -261,10 +261,11 @@ z-index move it on slider */
 }
 .modal-dialog {
 	width: 80% !important;
-	position: relative;
-	width: auto;
-	margin: 10px;
+	position: relative;	
+	height: 80vh;
+	margin: 30px auto;
 }
+
 .modal-content {
 	position: relative;
 	background-color: #fff;
@@ -273,6 +274,7 @@ z-index move it on slider */
 	border-radius: 6px;
 	outline: 0;
 	text-align: center !important;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .modal-header {
@@ -292,7 +294,6 @@ z-index move it on slider */
 	float: right;
 	font-size: 18px;
 	font-weight: bold;
-	line-height: 1.7;
 	color: #000;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
 	opacity: 0.4;
@@ -322,7 +323,7 @@ z-index move it on slider */
 	background-color: hsl(171, 56%, 51%);
 }
 
-.rew {
+.iframe {
 	height: 80vh;
 	border: 0;
 	width: 100%;
@@ -335,20 +336,6 @@ z-index move it on slider */
 	text-align: right;
 	border-top: none;
 	background-color: hsl(171, 56%, 51%);
-}
-
-@media (min-width: 768px) {
-	.modal-dialog {
-		width: 80%;
-		height: 80vh;
-		margin: 30px auto;
-	}
-	.modal-content {
-		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-	}
-	.modal-sm {
-		width: 300px;
-	}
 }
 
 .modal-backdrop {
