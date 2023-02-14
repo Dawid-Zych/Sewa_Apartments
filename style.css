@@ -121,7 +121,7 @@ z-index move it on slider */
 	position: fixed;
 	justify-content: space-between;
 	flex-direction: column;
-	z-index: 9000;
+	z-index: 3;
 	top: 0;
 	transition: all 0.5s ease;
 }
