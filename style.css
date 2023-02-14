@@ -179,6 +179,9 @@ z-index move it on slider */
 		border-right: hidden;
 	}
 
+	.section5 {
+		overflow: visible;
+	}
 	.section5 .column {
 		width: auto;
 		border-right: none;
