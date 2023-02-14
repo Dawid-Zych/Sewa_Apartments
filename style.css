@@ -545,6 +545,7 @@ z-index move it on slider */
 	.section4 .text,
 	.section4 .courtyard {
 		width: 100%;
+		margin-bottom: 5px;
 	}
 }
 
