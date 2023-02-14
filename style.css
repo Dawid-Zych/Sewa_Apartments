@@ -179,9 +179,6 @@ z-index move it on slider */
 		border-right: hidden;
 	}
 
-	.section5 {
-		overflow: visible;
-	}
 	.section5 .column {
 		width: auto;
 		border-right: none;
@@ -581,7 +578,7 @@ z-index move it on slider */
 	color: white;
 	padding: 20px;
 	float: left;
-	animation: 1s ease-in-out both;
+	animation: 1s ease-in-out both infinite;
 }
 
 @keyframes scale {
