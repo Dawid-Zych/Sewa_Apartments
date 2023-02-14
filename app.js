@@ -33,7 +33,6 @@ selectAll('.section3').forEach(() => {
 	// selectAll('.item') -- NOdelista slidów
 	// sprawdzamy liczbę naszych slajdów
 	const totalSlides = selectAll('.item').length;
-	console.log(totalSlides);
 
 	//nasz licznik
 	let c = 0;
@@ -72,7 +71,24 @@ hambBtn.addEventListener('click', showNav);
 
 // reservation online yieldplanet
 const reservation = document.querySelector('.reservation');
+const modal = document.querySelector('.modal');
+
 reservation.addEventListener('click', () => {
-	console.log('klik');
-	open('https://bookingengine.yieldplanet.com/book/BookingEngine.aspx?hotelId=5143', '_blank');
+	modal.style.display = 'block';
+
+	modal.addEventListener('click', listenerDocument);
+	document.addEventListener('keydown', listenerDocument);
+});
+
+const listenerDocument = (e) => {
+	if (e.key === 'Escape' || e.target.className === 'modal') {
+		modal.style.display = 'none';
+	}
+};
+
+// close reservation field
+const closeModal = document.querySelector('.close');
+
+closeModal.addEventListener('click', () => {
+	modal.style.display = 'none';
 });
