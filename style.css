@@ -221,6 +221,8 @@ z-index move it on slider */
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-size: 14px;
+	padding: 10px;
 }
 
 .section2 button.reservation {
@@ -231,7 +233,7 @@ z-index move it on slider */
 	border: none;
 	color: #ffffff;
 	background-color: #3dc9b3;
-	border: 2px solid #fff;
+	border: 1px solid #fff;
 	text-shadow: 0 0.075em 0.075em rgba(0, 0, 0, 0.5);
 	border-radius: 0.25em;
 }
