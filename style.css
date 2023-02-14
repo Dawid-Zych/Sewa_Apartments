@@ -597,7 +597,8 @@ z-index move it on slider */
 	}
 }
 .column:active,
-.column:hover {
+.column:hover,
+.column:focus {
 	animation-name: scale;
 }
 .column:last-child {
