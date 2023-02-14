@@ -243,6 +243,124 @@ z-index move it on slider */
 	background-color: white;
 }
 
+.modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 9999;
+	overflow: hidden;
+	outline: 0;
+}
+
+.modal-open .modal {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.modal-dialog {
+	width: 80% !important;
+	position: relative;
+	width: auto;
+	margin: 10px;
+}
+.modal-content {
+	position: relative;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 6px;
+	outline: 0;
+	text-align: center !important;
+}
+
+.modal-header {
+	display: flex;
+	flex-direction: row-reverse;
+	font-size: 14px;
+	padding: 15px;
+	border-bottom: 1px solid #e5e5e5;
+	height: 60px;
+}
+
+.close {
+	padding: 0;
+	cursor: pointer;
+	background-color: transparent;
+	border: 0;
+	float: right;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.7;
+	color: #000;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+	opacity: 0.4;
+	transition: opacity 0.3s ease;
+}
+
+.close:hover {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+	opacity: 0.6;
+}
+.modal-title {
+	color: hsl(171, 56%, 51%);
+	margin: auto;
+	line-height: 1.42857143;
+	letter-spacing: -0.035em;
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 171.4%;
+}
+.modal-body {
+	position: relative;
+	padding: 15px;
+	background-color: hsl(171, 56%, 51%);
+}
+
+.rew {
+	height: 80vh;
+	border: 0;
+	width: 100%;
+	max-width: 100%;
+}
+
+.modal-footer {
+	text-align: center !important;
+	padding: 15px;
+	text-align: right;
+	border-top: none;
+	background-color: hsl(171, 56%, 51%);
+}
+
+@media (min-width: 768px) {
+	.modal-dialog {
+		width: 80%;
+		height: 80vh;
+		margin: 30px auto;
+	}
+	.modal-content {
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+	}
+	.modal-sm {
+		width: 300px;
+	}
+}
+
+.modal-backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	background-color: #8c9398;
+}
+
 .section3 {
 	position: relative;
 	width: 100%;
