@@ -596,9 +596,9 @@ z-index move it on slider */
 		transform: scale(1);
 	}
 }
-.column:active,
 .column:hover,
-.column:focus {
+.column:focus,
+.column:active {
 	animation-name: scale;
 }
 .column:last-child {
