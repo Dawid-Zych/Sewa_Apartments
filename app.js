@@ -59,8 +59,8 @@ selectAll('.section3').forEach(() => {
 
 // nav responsywne na btn
 const hambBtn = document.querySelector('.fa-bars');
+const icon = document.querySelector('.hamburger-menu');
 const showNav = () => {
-	const icon = document.querySelector('.hamburger-menu');
 	if (icon.style.display === 'none') {
 		icon.style.display = 'block';
 	} else {
@@ -78,7 +78,7 @@ reservation.addEventListener('click', () => {
 	document.body.classList.add('modal-backdrop');
 });
 
-const listenerDocument = (e) => {	
+const listenerDocument = (e) => {
 	if (e.key === 'Escape' || e.target.className === 'modal active') {
 		modal.classList.remove('active');
 		document.body.classList.remove('modal-backdrop');
