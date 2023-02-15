@@ -94,3 +94,10 @@ closeModal.addEventListener('click', () => {
 	modal.classList.remove('active');
 	document.body.classList.remove('modal-backdrop');
 });
+
+// form validation and send msg
+const name = document.querySelector('#name');
+const email = document.querySelector('#email');
+const phone = document.querySelector('#phone');
+const textField = document.querySelector('#textField');
+const error = document.querySelectorAll('.error-text');

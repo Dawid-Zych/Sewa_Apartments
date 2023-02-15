@@ -703,7 +703,7 @@ form {
 }
 
 p.error-text {
-	visibility: hidden;
+	visibility: visible;
 }
 .field-control:last-child {
 	display: block;
