@@ -101,3 +101,4 @@ const email = document.querySelector('#email');
 const phone = document.querySelector('#phone');
 const textField = document.querySelector('#textField');
 const error = document.querySelectorAll('.error-text');
+const submitBtn = document.querySelector('.submitBtn');
