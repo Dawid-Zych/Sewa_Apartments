@@ -103,17 +103,41 @@ const textField = document.querySelector('#textField');
 const error = document.querySelectorAll('.error-text');
 const submitBtn = document.querySelector('.submitBtn');
 
+// literujemy po naszej tablicy inputow i sprawdzamy czy ich wartosc jest
+//wpisana, jesli nie to wywolujemy f. error a jak jest to f clearerror
+const checkForm = (input) => {
+	input.forEach((el) => {
+		if (el.value === '') {
+			showError(el);
+		} else {
+			clearError(el);
+		}
+	});
+};
+
+// lapiemy rodzenstwo inputa by wyswietlic blad lub usunac
 const showError = (input) => {
 	// argument input przechowuje nasze inputy co nie przeszly testu,
 	const errorMsg = input.nextElementSibling;
 	errorMsg.style.visibility = 'visible';
-		
 };
 
-// lapiemy rodzenstwo inputa by wyswietlic blad
 const clearError = (input) => {
 	const errorMsg = input.nextElementSibling;
 	errorMsg.style.visibility = 'hidden';
+};
+
+const checkUserName = (input) => {
+	var regName = /^[a-z ,.'-]+( [a-z ,.'-]+)+$/i;
+	const errorMsg = input.nextElementSibling;
+	if (!regName.test(input.value)) {
+		errorMsg.textContent = 'Podaj Imię i Nazwisko';
+		errorMsg.style.visibility = 'visible';
+		return false;
+	} else {
+		errorMsg.style.visibility = 'hidden';
+		return true;
+	}
 };
 
 const checkMail = (email) => {
@@ -125,32 +149,6 @@ const checkMail = (email) => {
 	} else {
 		showError(email, 'E-mail jest niepoprawny');
 	}
-};
-
-const checkUserName = (input) => {
-	var regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
-
-	if (!regName.test(input)) {
-		console.log('checkin');
-		alert('Please enter your full name (first & last name).');
-		document.getElementById('name').focus();
-		return false;
-	} else {
-		alert('Valid name given.');
-		return true;
-	}
-};
-
-// literujemy po naszej tablicy inputow i sprawdzamy czy ich wartosc jest
-//wpisana, jesli nie to wywolujemy f. error a jak jest to f clearerror
-const checkForm = (input) => {
-	input.forEach((el) => {
-		if (el.value === '') {
-			showError(el);
-		} else {
-			clearError(el);
-		}
-	});
 };
 
 const checkErrors = () => {
@@ -172,10 +170,9 @@ const checkErrors = () => {
 //preventDefault zeby nie przeladowywal strony
 submitBtn.addEventListener('click', (e) => {
 	e.preventDefault();
-
 	// umiescilismy nasze inputy w tablicy by bylo prosciej
 	checkForm([username, email, phone, textField]);
-	//checkUserName(username);
+	checkUserName(username);
 
 	// checkMail(email);
 	// checkErrors();
