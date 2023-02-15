@@ -96,9 +96,87 @@ closeModal.addEventListener('click', () => {
 });
 
 // form validation and send msg
-const name = document.querySelector('#name');
+const username = document.querySelector('#username');
 const email = document.querySelector('#email');
 const phone = document.querySelector('#phone');
 const textField = document.querySelector('#textField');
 const error = document.querySelectorAll('.error-text');
 const submitBtn = document.querySelector('.submitBtn');
+
+const showError = (input) => {
+	// argument input przechowuje nasze inputy co nie przeszly testu,
+	const errorMsg = input.nextElementSibling;
+	errorMsg.style.visibility = 'visible';
+		
+};
+
+// lapiemy rodzenstwo inputa by wyswietlic blad
+const clearError = (input) => {
+	const errorMsg = input.nextElementSibling;
+	errorMsg.style.visibility = 'hidden';
+};
+
+const checkMail = (email) => {
+	const re =
+		/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+	if (re.test(email.value)) {
+		clearError(email);
+	} else {
+		showError(email, 'E-mail jest niepoprawny');
+	}
+};
+
+const checkUserName = (input) => {
+	var regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
+
+	if (!regName.test(input)) {
+		console.log('checkin');
+		alert('Please enter your full name (first & last name).');
+		document.getElementById('name').focus();
+		return false;
+	} else {
+		alert('Valid name given.');
+		return true;
+	}
+};
+
+// literujemy po naszej tablicy inputow i sprawdzamy czy ich wartosc jest
+//wpisana, jesli nie to wywolujemy f. error a jak jest to f clearerror
+const checkForm = (input) => {
+	input.forEach((el) => {
+		if (el.value === '') {
+			showError(el);
+		} else {
+			clearError(el);
+		}
+	});
+};
+
+const checkErrors = () => {
+	const allInputs = document.querySelectorAll('.form-box');
+	let errorCount = 0;
+
+	allInputs.forEach((el) => {
+		if (el.classList.contains('error')) {
+			errorCount++;
+		}
+	});
+	console.log(errorCount);
+	if (errorCount === 0) {
+		popup.classList.add('show-popup');
+	}
+};
+
+//nadajemy 2 listenery na nasze przyciski, i ustawiamy
+//preventDefault zeby nie przeladowywal strony
+submitBtn.addEventListener('click', (e) => {
+	e.preventDefault();
+
+	// umiescilismy nasze inputy w tablicy by bylo prosciej
+	checkForm([username, email, phone, textField]);
+	//checkUserName(username);
+
+	// checkMail(email);
+	// checkErrors();
+});

@@ -299,12 +299,12 @@
 							<div class="field-control">
 								<input
 									type="text"
-									id="name"
+									id="username"
 									name="your-name"
 									placeholder="Imię i nazwisko"
 									required
 								/>
-								<p class="error-text">error</p>
+								<p class="error-text">Nazwa użytkownika jest niepoprawna</p>
 							</div>
 							<div class="field-control">
 								<input
@@ -315,7 +315,7 @@
 									size="40"
 									required
 								/>
-								<p class="error-text">error</p>
+								<p class="error-text">E-mail jest niepoprawny</p>
 							</div>
 							<div class="field-control">
 								<input
@@ -326,7 +326,7 @@
 									size="40"
 									required
 								/>
-								<p class="error-text">error</p>
+								<p class="error-text">Podany numer telefonu jest niepoprawny</p>
 							</div>
 							<div class="field-control">
 								<textarea
@@ -338,12 +338,11 @@
 									aria-invalid="false"
 									placeholder="Treść wiadomości"
 								></textarea>
-								<p class="error-text">error</p>
+								<p class="error-text">Sprawdź wpisaną treść i spróbuj ponownie.</p>
 							</div>
 						</form>
 						<div class="submitBtn">
-							<button class="submit" type="submit">wyślij</button>
-							<p class="error-text">error</p>
+							<input class="submit" type="submit" value="Wyślij" />
 						</div>
 					</div>
 				</div>
