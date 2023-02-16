@@ -129,25 +129,30 @@ const clearError = (input) => {
 
 const checkUserName = (input) => {
 	var regName = /^[a-z ,.'-]+( [a-z ,.'-]+)+$/i;
-	const errorMsg = input.nextElementSibling;
 	if (!regName.test(input.value)) {
-		errorMsg.textContent = 'Podaj Imię i Nazwisko';
-		errorMsg.style.visibility = 'visible';
-		return false;
+		showError(input);
 	} else {
-		errorMsg.style.visibility = 'hidden';
-		return true;
+		clearError(input);
 	}
 };
 
 const checkMail = (email) => {
-	const re =
+	const regMail =
 		/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-	if (re.test(email.value)) {
+	if (regMail.test(email.value)) {
 		clearError(email);
 	} else {
 		showError(email, 'E-mail jest niepoprawny');
+	}
+};
+
+const checkPhone = (input) => {
+	var regPhone = /^[0-9+]{8,13}$/;
+	if (regPhone.test(input.value)) {
+		clearError(input);
+	} else {
+		showError(input);
 	}
 };
 
@@ -173,7 +178,7 @@ submitBtn.addEventListener('click', (e) => {
 	// umiescilismy nasze inputy w tablicy by bylo prosciej
 	checkForm([username, email, phone, textField]);
 	checkUserName(username);
-
-	// checkMail(email);
+	checkMail(email);
+	checkPhone(phone);
 	// checkErrors();
 });
