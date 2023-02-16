@@ -99,7 +99,7 @@ closeModal.addEventListener('click', () => {
 const username = document.querySelector('#username');
 const email = document.querySelector('#email');
 const phone = document.querySelector('#phone');
-const textField = document.querySelector('#textField');
+const message = document.querySelector('#message');
 const error = document.querySelectorAll('.error-text');
 const submitBtn = document.querySelector('.submitBtn');
 
@@ -119,12 +119,12 @@ const checkForm = (input) => {
 const showError = (input) => {
 	// argument input przechowuje nasze inputy co nie przeszly testu,
 	const errorMsg = input.nextElementSibling;
-	errorMsg.style.visibility = 'visible';
+	errorMsg.classList.add('error');
 };
 
 const clearError = (input) => {
 	const errorMsg = input.nextElementSibling;
-	errorMsg.style.visibility = 'hidden';
+	errorMsg.classList.remove('error');
 };
 
 const checkUserName = (input) => {
@@ -143,7 +143,7 @@ const checkMail = (email) => {
 	if (regMail.test(email.value)) {
 		clearError(email);
 	} else {
-		showError(email, 'E-mail jest niepoprawny');
+		showError(email);
 	}
 };
 
@@ -157,16 +157,17 @@ const checkPhone = (input) => {
 };
 
 const checkErrors = () => {
-	const allInputs = document.querySelectorAll('.form-box');
-	let errorCount = 0;
-
+	const allInputs = document.querySelectorAll('.check');
+	let errorCount = 0;	
 	allInputs.forEach((el) => {
 		if (el.classList.contains('error')) {
 			errorCount++;
 		}
 	});
+
 	console.log(errorCount);
 	if (errorCount === 0) {
+		const formData = new FormData(form)
 		popup.classList.add('show-popup');
 	}
 };
@@ -176,9 +177,11 @@ const checkErrors = () => {
 submitBtn.addEventListener('click', (e) => {
 	e.preventDefault();
 	// umiescilismy nasze inputy w tablicy by bylo prosciej
-	checkForm([username, email, phone, textField]);
+	checkForm([username, email, phone, message]);
 	checkUserName(username);
 	checkMail(email);
 	checkPhone(phone);
-	// checkErrors();
+	checkErrors();
+
+	
 });

@@ -702,11 +702,15 @@ form {
 	color: #c5c5c5;
 }
 
-.field-control .error-text {
+.field-control .check {
 	visibility: hidden;
 	text-align: left;
 	font-size: 16px;
 	color: red;
+}
+
+.field-control .error {
+	visibility: visible;
 }
 
 .field-control:last-child {

@@ -295,50 +295,54 @@
 				<div class="section7-form" id="kontakt">
 					<h2>NAPISZ DO NAS</h2>
 					<div class="x-container">
-						<form id="form " action="" method="post" novalidate>
+						<form
+							id="form "
+							action="mailto:dawid.aliens1989@gmail.com"
+							method="post"
+							enctype="text/plain"
+						>
 							<div class="field-control">
 								<input
 									type="text"
 									id="username"
-									name="your-name"
+									name="username"
 									placeholder="Imię i nazwisko"
 									required
 								/>
-								<p class="error-text">Podaj Imię i Nazwisko</p>
+								<p class="check">Podaj Imię i Nazwisko</p>
 							</div>
 							<div class="field-control">
 								<input
 									type="email"
 									id="email"
-									name="your-email"
+									name="email"
 									placeholder="Adres email"
 									size="40"
 									required
 								/>
-								<p class="error-text">E-mail jest niepoprawny</p>
+								<p class="check">E-mail jest niepoprawny</p>
 							</div>
 							<div class="field-control">
 								<input
 									type="tel"
 									id="phone"
-									name="telefon"
+									name="phone"
 									placeholder="Telefon"
 									size="40"
 									required
 								/>
-								<p class="error-text">Podany numer telefonu jest niepoprawny</p>
+								<p class="check">Podany numer telefonu jest niepoprawny</p>
 							</div>
 							<div class="field-control">
 								<textarea
-									id="textField"
-									name="your-message"
+									id="message"
+									name="message"
 									cols="40"
 									rows="10"
-									name="your-message"
 									aria-invalid="false"
 									placeholder="Treść wiadomości"
 								></textarea>
-								<p class="error-text">Sprawdź wpisaną treść i spróbuj ponownie.</p>
+								<p class="check">To pole nie może być puste</p>
 							</div>
 						</form>
 						<div class="submitBtn">
