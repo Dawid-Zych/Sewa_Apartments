@@ -655,14 +655,6 @@ form {
 	background-color: inherit;
 }
 
-.x-container {
-	padding: 0px;
-	align-content: center;
-	text-align: center;
-	width: 100%;
-	background-color: hsl(0, 0%, 98%);
-}
-
 .field-control {
 	display: inline-block;
 	width: 30.1%;
@@ -704,6 +696,7 @@ form {
 
 .field-control .check {
 	visibility: hidden;
+	background-color: hsl(0, 0%, 98%);
 	text-align: left;
 	font-size: 16px;
 	color: red;
@@ -736,7 +729,6 @@ form {
 }
 
 .submitBtn {
-	background-color: hsl(0, 0%, 98%);
 	background-color: #3dc9b3;
 	color: #fff;
 	outline: 0;
@@ -788,7 +780,7 @@ form {
 	padding: 45px 0px;
 	background-color: hsl(0, 0%, 39%);
 	justify-content: center;
-	text-align: center;
+	align-items: center;
 	gap: 20px;
 	transition: all 0.5s ease;
 }
@@ -813,6 +805,7 @@ form {
 .section8-right p {
 	background-color: hsl(0, 0%, 39%);
 	margin: 0 0 1.313em;
+	justify-items: left;
 }
 
 .section8-right b {
@@ -896,15 +889,13 @@ footer {
 }
 .name {
 	font-weight: bold;
-	margin-left: 20px;
+	margin-left: 5px;
 	background-color: #f3f3f3;
 }
 
 @media screen and (max-width: 824px) {
 	footer {
 		flex-direction: column;
-		text-align: center;
-		justify-content: center;
 		align-items: center;
 	}
 }
