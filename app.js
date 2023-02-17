@@ -121,11 +121,13 @@ const showError = (input) => {
 	// argument input przechowuje nasze inputy co nie przeszly testu,
 	const errorMsg = input.previousElementSibling;
 	errorMsg.classList.add('error');
+	input.classList.add('error')
 };
 
 const clearError = (input) => {
 	const errorMsg = input.previousElementSibling;
 	errorMsg.classList.remove('error');
+	input.classList.remove('error')
 };
 
 const checkUserName = (input) => {
@@ -162,12 +164,10 @@ const checkErrors = () => {
 	let errorCount = 0;
 	allInputs.forEach((el) => {
 		if (el.classList.contains('error')) {
-			errorCount++;
-			return false;
+			errorCount++;		
 		}
 	});
-
-	console.log(errorCount);
+	
 	if (errorCount === 0) {
 		form.submit();
 	}

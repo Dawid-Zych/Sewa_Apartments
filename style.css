@@ -681,6 +681,11 @@ form {
 	transition: border linear 0.4s, box-shadow linear 0.4s;
 	transition-property: border, box-shadow;
 	transition-duration: 0.2s, 0.2s;
+	border-radius: 5px;
+}
+
+.field-control input.error {
+	border: 1px solid red;	
 }
 
 .field-control input:focus,
@@ -702,7 +707,7 @@ form {
 	color: red;
 }
 
-.field-control .error {
+.field-control .check.error {
 	visibility: visible;
 }
 
@@ -710,14 +715,14 @@ form {
 	width: 100%;
 }
 .field-control textarea {
+	display: inline-block;
 	background: #fff;
-	border-radius: 0px;
 	box-shadow: none;
 	border: 1px solid #c1c1c1;
+	border-radius: 5px;
 	padding: 25px 10px;
 	color: #5a5a5a;
 	font-size: 15px;
-	display: inline-block;
 	width: 100%;
 	line-height: normal;
 	margin: 0;
@@ -725,7 +730,6 @@ form {
 	overflow: auto;
 	margin-bottom: 9px;
 	vertical-align: top;
-	height: auto;
 }
 
 .submitBtn {
