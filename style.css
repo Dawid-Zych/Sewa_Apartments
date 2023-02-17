@@ -775,6 +775,10 @@ form {
 		display: inline-block;
 		width: 100%;
 	}
+
+	.field-control .check {
+		font-size: 12px;
+	}
 }
 
 .section8 {
