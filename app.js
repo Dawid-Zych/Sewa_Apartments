@@ -102,6 +102,7 @@ const phone = document.querySelector('#phone');
 const message = document.querySelector('#message');
 const error = document.querySelectorAll('.error-text');
 const submitBtn = document.querySelector('.submitBtn');
+const form = document.querySelector('form');
 
 // literujemy po naszej tablicy inputow i sprawdzamy czy ich wartosc jest
 //wpisana, jesli nie to wywolujemy f. error a jak jest to f clearerror
@@ -158,17 +159,17 @@ const checkPhone = (input) => {
 
 const checkErrors = () => {
 	const allInputs = document.querySelectorAll('.check');
-	let errorCount = 0;	
+	let errorCount = 0;
 	allInputs.forEach((el) => {
 		if (el.classList.contains('error')) {
 			errorCount++;
+			return false;
 		}
 	});
 
 	console.log(errorCount);
 	if (errorCount === 0) {
-		const formData = new FormData(form)
-		popup.classList.add('show-popup');
+		form.submit();
 	}
 };
 
@@ -182,6 +183,4 @@ submitBtn.addEventListener('click', (e) => {
 	checkMail(email);
 	checkPhone(phone);
 	checkErrors();
-
-	
 });

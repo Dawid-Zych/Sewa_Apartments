@@ -713,8 +713,7 @@ form {
 	visibility: visible;
 }
 
-.field-control:last-child {
-	display: block;
+.field-control.last {
 	width: 100%;
 }
 .field-control textarea {
@@ -738,9 +737,6 @@ form {
 
 .submitBtn {
 	background-color: hsl(0, 0%, 98%);
-}
-
-.submit {
 	background-color: #3dc9b3;
 	color: #fff;
 	outline: 0;
@@ -749,7 +745,7 @@ form {
 	text-transform: uppercase;
 	font-size: 14px;
 	padding: 12px 60px;
-	margin: 0 auto;
+	margin: 50px auto;
 	display: block;
 	margin-top: 35px;
 	border-radius: 0.25em;
