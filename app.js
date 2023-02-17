@@ -119,12 +119,12 @@ const checkForm = (input) => {
 // lapiemy rodzenstwo inputa by wyswietlic blad lub usunac
 const showError = (input) => {
 	// argument input przechowuje nasze inputy co nie przeszly testu,
-	const errorMsg = input.nextElementSibling;
+	const errorMsg = input.previousElementSibling;
 	errorMsg.classList.add('error');
 };
 
 const clearError = (input) => {
-	const errorMsg = input.nextElementSibling;
+	const errorMsg = input.previousElementSibling;
 	errorMsg.classList.remove('error');
 };
 
