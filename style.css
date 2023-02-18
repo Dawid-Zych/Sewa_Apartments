@@ -239,7 +239,7 @@ z-index move it on slider */
 }
 
 .section2 button.reservation:hover,
-.description a:hover {
+.item .description a:hover {
 	border-color: #3dc9b3;
 	color: hsl(171, 56%, 51%);
 	background-color: white;
@@ -376,7 +376,7 @@ z-index move it on slider */
 }
 
 .item .picture-apartments {
-	width: 50%;
+	width: 100%;
 }
 
 .item .picture-apartments .slide-picture {
@@ -386,9 +386,9 @@ z-index move it on slider */
 }
 
 .item .description {
-	display: block;
+	display: flex;
 	flex-direction: column;
-	width: 50%;
+	width: 100%;
 	padding: 30px 70px;
 	font-size: 14px;
 	color: #8c9398;
@@ -409,15 +409,29 @@ z-index move it on slider */
 }
 
 .item .description a {
-	padding: 0.563em 1.125em 0.813em;
+	padding: 10px;
+	text-align: center;
+	margin: auto;
 	cursor: pointer;
 	font-size: 16px;
-	border: none;
 	color: #ffffff;
 	background-color: #3dc9b3;
 	border: 2px solid #fff;
 	text-shadow: 0 0.075em 0.075em rgba(0, 0, 0, 0.5);
-	border-radius: 0.25em;
+	border-radius: 5px;
+	width: 200px;
+}
+
+@media screen and (max-width: 824px) {
+	.slider .item {
+		flex-direction: column;
+		max-height: 100%;
+	}
+
+	.picture-apartments img {
+		width: 100%;
+		height: 350px;
+	}
 }
 
 /* .buttons-slidebar {
@@ -685,7 +699,7 @@ form {
 }
 
 .field-control input.error {
-	border: 1px solid red;	
+	border: 1px solid red;
 }
 
 .field-control input:focus,
