@@ -410,6 +410,7 @@ z-index move it on slider */
 .item .description a {
 	padding: 10px;
 	margin: auto;
+	text-align: center;
 	cursor: pointer;
 	font-size: 16px;
 	color: #ffffff;
