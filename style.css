@@ -492,11 +492,11 @@ z-index move it on slider */
 	}
 
 	.section3 .fa-chevron {
-		width: 16px;
+		width: 40px;
 	}
 
 	.section3 .fa-chevron:hover {
-		width: 20px;
+		width: 45px;
 	}
 }
 /* Section 4 - about us */
@@ -575,6 +575,9 @@ z-index move it on slider */
 }
 
 @media screen and (max-width: 824px) {
+	.section4 {
+		margin-top: 10px;
+	}
 	.section4 .text {
 		padding: 90px 35px 10px 35px;
 	}
