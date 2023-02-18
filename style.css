@@ -455,7 +455,7 @@ z-index move it on slider */
 	}
 
 	.item .description {
-		padding: 35px;
+		padding: 0 35px 0;
 	}
 
 	.item .picture-apartments .slide-picture {
