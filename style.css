@@ -392,10 +392,7 @@ z-index move it on slider */
 	flex-direction: column;
 	width: 50%;
 	padding: 30px 70px;
-	font-size: 14px;
-	color: #8c9398;
-	text-align: justify;
-	line-height: 1.7;
+	text-align: justify !important;
 }
 
 .item .description h2 {
@@ -412,7 +409,6 @@ z-index move it on slider */
 
 .item .description a {
 	padding: 10px;
-	text-align: center;
 	margin: auto;
 	cursor: pointer;
 	font-size: 16px;
