@@ -403,13 +403,9 @@ z-index move it on slider */
 	letter-spacing: 2px;
 }
 
-.item .description p {
-	margin-bottom: 40px;
-}
-
 .item .description a {
 	padding: 10px;
-	margin: auto;
+	margin: 20px auto;
 	text-align: center;
 	cursor: pointer;
 	font-size: 16px;
