@@ -368,11 +368,13 @@ z-index move it on slider */
 	position: relative;
 	display: flex;
 	transition: 0.5s;
+	width: 100%;
 }
 .slider .item {
 	display: flex;
 	flex: 1 0 100%;
 	height: 100%;
+	width: 100%;
 }
 
 .item .picture-apartments {
@@ -420,20 +422,6 @@ z-index move it on slider */
 	text-shadow: 0 0.075em 0.075em rgba(0, 0, 0, 0.5);
 	border-radius: 5px;
 	width: 200px;
-}
-
-@media screen and (max-width: 824px) {
-	.slider .item {
-		flex-direction: column;
-		max-height: 100%;
-	}
-	
-	
-	.picture-apartments .slide-picture {
-		width: 200px;
-		height: 300px;
-		object-fit: cover;
-	}
 }
 
 /* .buttons-slidebar {
@@ -491,6 +479,26 @@ z-index move it on slider */
 	width: 65px;
 }
 
+@media screen and (max-width: 824px) {
+	.slider .item {
+		flex-direction: column;
+		max-height: 100%;
+	}
+
+	.picture-apartments .slide-picture {
+		display: flex;
+		width: 100%;
+		height: 100%;
+	}
+
+	.section3 .fa-chevron {
+		width: 16px;
+	}
+
+	.section3 .fa-chevron:hover {
+		width: 20px;
+	}
+}
 /* Section 4 - about us */
 
 .section4 {
