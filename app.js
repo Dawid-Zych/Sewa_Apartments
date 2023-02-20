@@ -33,6 +33,7 @@ selectAll('.section3').forEach(() => {
 	// selectAll('.item') -- NOdelista slidów
 	// sprawdzamy liczbę naszych slajdów
 	const totalSlides = selectAll('.item').length;
+	const totalDots = selectAll('.fa-circle');
 
 	//nasz licznik
 	let c = 0;
@@ -41,8 +42,62 @@ selectAll('.section3').forEach(() => {
 	const anim = () => (slideBox.style.transform = `translateX(-${c * 100}%)`);
 
 	// funkcja na przycisku
-	const prev = () => ((c = mod(c - 1, totalSlides)), anim());
-	const next = () => ((c = mod(c + 1, totalSlides)), anim());
+	const prev = () => {
+		c = mod(c - 1, totalSlides);
+
+		switch (c) {
+			case 0:
+				totalDots[1].classList.remove('active2');
+				totalDots[0].classList.add('active2');
+				break;
+			case 1:
+				totalDots[2].classList.remove('active2');
+				totalDots[1].classList.add('active2');
+				break;
+			case 2:
+				totalDots[3].classList.remove('active2');
+				totalDots[2].classList.add('active2');
+				break;
+			case 3:
+				totalDots[4].classList.remove('active2');
+				totalDots[3].classList.add('active2');
+				break;
+			case 4:
+				totalDots[0].classList.remove('active2');
+				totalDots[4].classList.add('active2');
+				break;
+		}
+		anim();
+	};
+
+	const next = () => {
+		c = mod(c + 1, totalSlides);
+
+		switch (c) {
+			case 0:
+				totalDots[4].classList.remove('active2');
+				totalDots[0].classList.add('active2');
+				break;
+			case 1:
+				totalDots[0].classList.remove('active2');
+				totalDots[1].classList.add('active2');
+				break;
+			case 2:
+				totalDots[1].classList.remove('active2');
+				totalDots[2].classList.add('active2');
+				break;
+			case 3:
+				totalDots[2].classList.remove('active2');
+				totalDots[3].classList.add('active2');
+				break;
+			case 4:
+				totalDots[3].classList.remove('active2');
+				totalDots[4].classList.add('active2');
+				break;
+		}
+
+		anim();
+	};
 
 	// listener na nasze przyciski
 	select('.left').addEventListener('click', prev);
@@ -121,13 +176,13 @@ const showError = (input) => {
 	// argument input przechowuje nasze inputy co nie przeszly testu,
 	const errorMsg = input.previousElementSibling;
 	errorMsg.classList.add('error');
-	input.classList.add('error')
+	input.classList.add('error');
 };
 
 const clearError = (input) => {
 	const errorMsg = input.previousElementSibling;
 	errorMsg.classList.remove('error');
-	input.classList.remove('error')
+	input.classList.remove('error');
 };
 
 const checkUserName = (input) => {
@@ -164,10 +219,10 @@ const checkErrors = () => {
 	let errorCount = 0;
 	allInputs.forEach((el) => {
 		if (el.classList.contains('error')) {
-			errorCount++;		
+			errorCount++;
 		}
 	});
-	
+
 	if (errorCount === 0) {
 		form.submit();
 	}

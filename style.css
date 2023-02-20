@@ -469,6 +469,39 @@ z-index move it on slider */
 		width: 40px;
 	}
 }
+
+.buttons-slidebar {
+	display: flex;
+	background: transparent;
+	position: absolute;
+	right: 18%;
+	top: 90%;
+}
+
+.buttons-slidebar p {
+	background: transparent;
+}
+
+.fa-circle {
+	margin: 10px;
+	background-color: transparent;
+	color: #6e7579;
+	cursor: pointer;
+}
+
+.fa-circle:hover {
+	background-color: black;
+	color: hsl(180, 3%, 7%);
+	border-radius: 50%;
+	border: none;
+}
+
+.fa-circle.active2 {
+	background-color: hsl(171, 56%, 51%);
+	color: hsl(171, 56%, 51%);
+	border-radius: 50%;
+}
+
 /* Section 4 - about us */
 
 .section4 {
