@@ -5,7 +5,13 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="/style.css" />
+		<link rel="stylesheet" href="gallery.css" />
 		<title>Document</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://kit.fontawesome.com/de05f8354b.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -76,7 +82,7 @@
 									/></a>
 									<a href="./en/"
 										><img
-											src="picture/National_Flag_of_UK.png"
+											src="/picture/National_Flag_of_UK.png"
 											alt="Flaga Wielkiej Brytanii"
 											class="icon iconFlag"
 									/></a>
@@ -86,16 +92,16 @@
 					</div>
 				</div>
 			</div>
-			<h2 class="">
-				<span><a href="https://sewa.pl/">Strona główna</a></span>
+			<h2>
+				<span><a href="/index.html">Strona główna</a></span>
 			</h2>
 			<div id="tabs">
-				<ul>
+				<ul class="rooms">
 					<li>
 						<a href="#tabs-181">SEWA</a>
 					</li>
 					<li>
-						<a>SEWA I</a>
+						<a href="">SEWA I</a>
 					</li>
 					<li>
 						<a href="#tabs-223">SEWA II</a>
@@ -108,14 +114,21 @@
 					</li>
 				</ul>
 
+				<div class="elements-list" id="slider1">
+					<img src="/apartaments/SEWA/sewa-1.jpg" alt="" />
+					<img src="/apartaments/SEWA/sewa-2.jpg" alt="" />
+					<img src="/apartaments/SEWA/sewa-3.jpg" alt="" />
+					<img src="/apartaments/SEWA/sewa-4.jpg" alt="" />
+				</div>
+
 				<div class="tab-content">
-					<h2 class="">
+					<h2 class="marginaparts">
 						<span>OPIS APARTAMENTU</span>
 					</h2>
 					SEWA to nowoczesne i komfortowe studio (35 m2) położone na Ip. budynku
 					frontowego z oknami wychodzącymi na całoroczny zielony ogródek. Wygodnie i w
 					ciszy zamieszkają w nim nawet 4 osoby.
-					<h2 class="">
+					<h2 class="marginaparts">
 						<span>UDOGODNIENIA</span>
 					</h2>
 					<div class="udogodnienie">
@@ -458,5 +471,7 @@
 				</footer>
 			</div>
 		</div>
+		<script src="slide.js"></script>
+		<script src="/app.js"></script>
 	</body>
 </html>
