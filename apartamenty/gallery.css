@@ -242,3 +242,9 @@ h2 a {
 .slider-pagination-button:focus {
 	outline: none;
 }
+
+@media screen and (max-width: 824px) {
+	.slider {
+		width: 100%;
+	}
+}
