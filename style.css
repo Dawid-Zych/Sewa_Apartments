@@ -485,7 +485,7 @@ z-index move it on slider */
 .fa-circle {
 	margin: 10px;
 	background-color: transparent;
-	color: #6e7579;	
+	color: #6e7579;
 }
 
 .fa-circle.active2 {
@@ -494,6 +494,11 @@ z-index move it on slider */
 	border-radius: 50%;
 }
 
+@media screen and (max-width: 824px) {
+	.buttons-slidebar {
+		display: none;
+	}
+}
 /* Section 4 - about us */
 
 .section4 {
