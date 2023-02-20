@@ -485,15 +485,7 @@ z-index move it on slider */
 .fa-circle {
 	margin: 10px;
 	background-color: transparent;
-	color: #6e7579;
-	cursor: pointer;
-}
-
-.fa-circle:hover {
-	background-color: black;
-	color: hsl(180, 3%, 7%);
-	border-radius: 50%;
-	border: none;
+	color: #6e7579;	
 }
 
 .fa-circle.active2 {
