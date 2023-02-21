@@ -67,8 +67,9 @@ h2 a {
 	color: #3dc9b3;
 }
 
-.elements-list {
+.elements-list img {
 	width: 100%;
+	object-fit: cover;
 }
 
 /* ----- slider ---- */
@@ -89,7 +90,7 @@ h2 a {
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr;
 	width: 100%;
-	max-height: 700px;
+	max-height: 600px;
 }
 .slider-slide {
 	grid-column: 1 / 2;
@@ -263,5 +264,8 @@ h2 a {
 @media screen and (max-width: 824px) {
 	.slider {
 		width: 100%;
+	}
+	.slider-slide {
+		max-height: 400px;
 	}
 }
