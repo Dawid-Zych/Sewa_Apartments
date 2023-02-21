@@ -91,6 +91,7 @@ h2 a {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr;
+	max-height: 500px;
 }
 .slider-slide {
 	grid-column: 1 / 2;
@@ -263,8 +264,5 @@ h2 a {
 @media screen and (max-width: 824px) {
 	.slider {
 		width: 100%;
-	}
-	.slider-slide {
-		max-height: 500px;
 	}
 }
