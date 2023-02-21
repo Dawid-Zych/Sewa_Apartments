@@ -56,20 +56,20 @@ h2 a {
 	vertical-align: middle;
 }
 
-.lastamenities {
-	padding-left: 50px;
-}
-  @media screen and (max-width:824px) {
-	.amenities:first{
+@media screen and (max-width: 824px) {
+	.lastamenities {
+		display: flex;
 		padding-left: 50px;
 	}
-	
-  }
 
-  .active-tab {
+	.tab-content {
+		padding:30px;
+	}
+}
+
+.active-tab {
 	color: #3dc9b3;
-  }
-
+}
 
 /* ----- slider ---- */
 .slider {
