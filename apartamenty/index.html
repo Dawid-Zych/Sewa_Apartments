@@ -98,23 +98,49 @@
 			<div id="tabs">
 				<ul class="menu-tabs">
 					<li>
-						<a class="active-tab" href="#tabs-181">SEWA</a>
+						<a
+							class="active-tab"
+							href="#tabs-1"
+							data-id="first-tab"
+							onclick="showInfo('slider1','first-tab')"
+							>SEWA</a
+						>
 					</li>
 					<li>
-						<a href="">SEWA I</a>
+						<a
+							href="#tabs-2"
+							data-id="second-tab"
+							onclick="showInfo('slider2','second-tab')"
+							>SEWA I</a
+						>
 					</li>
 					<li>
-						<a href="#tabs-223">SEWA II</a>
+						<a
+							href="#tabs-3"
+							data-id="third-tab"
+							onclick="showInfo('slider3','third-tab')"
+							>SEWA II</a
+						>
 					</li>
 					<li>
-						<a href="#tabs-592" id="ui-id-5">SEWA IV</a>
+						<a
+							href="#tabs-4"
+							data-id="fourth-tab"
+							onclick="showInfo('slider4','fourth-tab')"
+							>SEWA IV</a
+						>
 					</li>
 					<li>
-						<a href="#tabs-611">SEWA MINI</a>
+						<a
+							href="#tabs-5"
+							data-id="fifth-tab"
+							onclick="showInfo('slider5','fifth-tab')"
+							>SEWA MINI</a
+						>
 					</li>
 				</ul>
 
-				<div class="elements-list" id="slider1" style="display: block">
+				<div class="elements-list" id="slider1" style="display: grid">
 					<img src="/apartaments/SEWA/sewa-1.jpg" alt="" />
 					<img src="/apartaments/SEWA/sewa-2.jpg" alt="" />
 					<img src="/apartaments/SEWA/sewa-3.jpg" alt="" />
@@ -417,7 +443,7 @@
 				</footer>
 			</div>
 		</div>
+		<script src="changesite.js"></script>
 		<script src="slide.js"></script>
-		<script src="/app.js"></script>
 	</body>
 </html>
