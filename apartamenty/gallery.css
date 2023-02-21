@@ -1,8 +1,7 @@
 h2 {
 	text-align: center;
-	padding: 25px 0px 15px;
-	text-transform: uppercase;
 	margin: 1.25em 0 0.2em;
+	text-transform: uppercase;
 }
 
 h2 a {
@@ -57,6 +56,15 @@ h2 a {
 	vertical-align: middle;
 }
 
+.lastamenities {
+	padding-left: 50px;
+}
+  @media screen and (max-width:824px) {
+	.amenities:first{
+		padding-left: 50px;
+	}
+	
+  }
 /* ----- slider ---- */
 .slider {
 	position: relative;
