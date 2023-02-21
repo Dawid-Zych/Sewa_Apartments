@@ -96,9 +96,9 @@
 				<span><a href="/index.html">Strona główna</a></span>
 			</h2>
 			<div id="tabs">
-				<ul class="rooms">
+				<ul class="menu-tabs">
 					<li>
-						<a href="#tabs-181">SEWA</a>
+						<a class="active-tab" href="#tabs-181">SEWA</a>
 					</li>
 					<li>
 						<a href="">SEWA I</a>
@@ -121,7 +121,7 @@
 					<img src="/apartaments/SEWA/sewa-4.jpg" alt="" />
 				</div>
 
-				<div class="tab-content">
+				<div class="tab-content" id="first-tab">
 					<h2 class="marginaparts">
 						<span>OPIS APARTAMENTU</span>
 					</h2>
@@ -162,38 +162,38 @@
 					</div>
 				</div>
 
-				<div class="tab-content" style="display: none">
-					<h2 class="">
+				<div class="tab-content" id="second-tab" style="display: none">
+					<h2 class="marginaparts">
 						<span>OPIS APARTAMENTU</span>
 					</h2>
 					Sewa I (35 m2) znajduje się na Ip. budynku oficyny. Całoroczny zielony ogródek,
 					balkon i panujący spokój zapewniają komfortowy pobyt dla max. 4 osób. Na
 					mieszkanie składają się; kuchnia połączona z jadalnio-salonem, oddzielna
 					sypialnia i komfortowa łazienka.
-					<h2 class="">
+					<h2 class="marginaparts">
 						<span>UDOGODNIENIA</span>
 					</h2>
-					<div class="udogodnienie">
+					<div class="amenities">
 						<img src="icons/shower.png" />
 						Prywatna Łazienka
 					</div>
-					<div class="udogodnienie">
+					<div class="amenities">
 						<img src="icons/house-size.png" />
 						Powierzchnia pokoju: 35 m²
 					</div>
-					<div class="udogodnienie">
+					<div class="amenities">
 						<img src="icons/bed.png" />
 						1 bardzo duże łóżko podwójne, 2x rozkładana sofa
 					</div>
-					<div class="udogodnienie">
+					<div class="amenities">
 						<img src="icons/info.png" />
 						Apartament z tarasem. W apartamencie znajduje się zmywarka do naczyń i
 						kuchenka mikrofalowa.
 					</div>
-					<div class="udogodnienie">
+					<div class="amenities">
 						<img src="icons/five-stars-outlines.png" />
 						Udogodnienia w pokoju
-						<div class="lastudogodnienia">
+						<div class="lastamenities">
 							balkon, widok na ogród, telewizor, radio, odtwarzacz CD, kanały
 							satelitarne, żelazko, biurko, sprzęt do prasowania, pralka, ogrzewanie,
 							prywatne wejście, drewniana podłoga / parkiet, szafa / garderoba, środki
@@ -205,8 +205,8 @@
 					</div>
 				</div>
 
-				<div class="tab-content" style="display: none">
-					<h2 class="h-custom-headline cs-ta-center ch h3 marginaparts">
+				<div class="tab-content" id="third-tab" style="display: none">
+					<h2 class="marginaparts">
 						<span>OPIS APARTAMENTU</span>
 					</h2>
 					SEWA II (60 m2)położony jest na parterze budynku oficyny, co umożliwia
@@ -214,29 +214,29 @@
 					wychodzą na przez cały rok zielony ogródek. Mimo położenia w ścisłym centrum
 					Krakowa jest bardzo cicho. Kuchnia połączona z salonem, dwie sypialnie, łazienka
 					i osobne dodatkowe WC zapewniają komfortowy pobyt nawet dla 6 osób.
-					<h2 class="h-custom-headline cs-ta-center ch h3 marginaparts">
+					<h2 class="marginaparts">
 						<span>UDOGODNIENIA</span>
 					</h2>
-					<div class="udogodnienie">
+					<div class="amenities">
 						<img src="icons/shower.png" />
 						Prywatna Łazienka
 					</div>
-					<div class="udogodnienie">
+					<div class="amenities">
 						<img src="icons/house-size.png" />
 						Powierzchnia pokoju: 60 m²
 					</div>
-					<div class="udogodnienie">
+					<div class="amenities">
 						<img src="icons/bed.png" />
 						1 podwójne łóżko, 2 łóżka pojedyńcze, 1 sofa rozkładana
 					</div>
-					<div class="udogodnienie">
+					<div class="amenities">
 						<img src="icons/info.png" />
 						Widok na ogród
 					</div>
-					<div class="udogodnienie">
+					<div class="amenities">
 						<img src="icons/five-stars-outlines.png" />
 						Udogodnienia w pokoju
-						<div class="lastudogodnienia">
+						<div class="lastamenities">
 							widok na ogród, telewizor, radio, odtwarzacz CD, kanały satelitarne,
 							żelazko, biurko, sprzęt do prasowania, pralka, ogrzewanie, prywatne
 							wejście, drewniana podłoga / parkiet, środki czystości, suszarka na
@@ -246,13 +246,9 @@
 							parterze, całość dostępna dla wózków inwalidzkich
 						</div>
 					</div>
-					<div
-						class="x-container optionsx marginless-columns"
-						style="margin: 0px auto; padding: 0px"
-					></div>
 				</div>
 
-				<div class="tab-content" style="display: none">
+				<div class="tab-content" id="fourth-tab" style="display: none">
 					<h2 class="h-custom-headline cs-ta-center ch h3 marginaparts">
 						<span>OPIS APARTAMENTU</span>
 					</h2>
@@ -299,7 +295,7 @@
 					></div>
 				</div>
 
-				<div class="tab-content" style="display: none">
+				<div class="tab-content" id="fifth-tab" style="display: none">
 					<h2 class="h-custom-headline cs-ta-center ch h3 marginaparts">
 						<span>OPIS APARTAMENTU</span>
 					</h2>
@@ -341,88 +337,6 @@
 						class="x-container optionsx marginless-columns"
 						style="margin: 0px auto; padding: 0px"
 					></div>
-				</div>
-
-				<div
-					id="x-section-3"
-					class="x-section"
-					style="
-						margin: 0px;
-						padding: 0px 0px 40px;
-						display: none;
-						background-color: hsla(0, 0%, 100%, 0);
-					"
-				>
-					<div
-						class="x-container optionsx marginless-columns"
-						style="margin: 0px auto; padding: 0px"
-					>
-						<div
-							class="x-column x-sm cs-ta-center features-grid wifi hvr-bounce-in x-1-4"
-							style="
-								padding: 0px;
-								border-style: solid;
-								border-width: 0px 1px 0px 0px;
-								border-color: hsl(0, 0%, 100%);
-							"
-						>
-							<img
-								class="x-img x-img-none"
-								src="SEWA%20-%20Apartementy%20w%20sercu%20Krakowa%20-%20Apartamenty_pliki/wifi-1.png"
-							/>
-							<div class="x-text"><p>bezpłatne WiFi</p></div>
-						</div>
-						<div
-							class="x-column x-sm cs-ta-center features-grid pr hvr-bounce-in x-1-4"
-							style="
-								padding: 0px;
-								border-style: solid;
-								border-width: 0px 1px 0px 0px;
-								border-color: hsl(0, 0%, 100%);
-							"
-						>
-							<img
-								class="x-img x-img-none"
-								src="SEWA%20-%20Apartementy%20w%20sercu%20Krakowa%20-%20Apartamenty_pliki/pep.png"
-							/>
-							<div class="x-text"><p>pokoje rodzinne</p></div>
-						</div>
-						<div
-							class="x-column x-sm cs-ta-center features-grid hvr-bounce-in x-1-4"
-							style="
-								padding: 0px;
-								border-style: solid;
-								border-width: 0px 1px 0px 0px;
-								border-color: hsl(0, 0%, 100%);
-							"
-						>
-							<img
-								class="x-img x-img-none"
-								src="SEWA%20-%20Apartementy%20w%20sercu%20Krakowa%20-%20Apartamenty_pliki/pies.png"
-							/>
-							<div class="x-text">
-								<p>
-									zwierzęta domowe<br />
-									są akceptowane
-								</p>
-							</div>
-						</div>
-						<div
-							class="x-column x-sm cs-ta-center features-grid hvr-bounce-in x-1-4"
-							style="padding: 0px"
-						>
-							<img
-								class="x-img x-img-none"
-								src="SEWA%20-%20Apartementy%20w%20sercu%20Krakowa%20-%20Apartamenty_pliki/asdasdas.png"
-							/>
-							<div class="x-text">
-								<p>
-									udogodnienia<br />
-									dla niepełnosprawnych
-								</p>
-							</div>
-						</div>
-					</div>
 				</div>
 
 				<div class="section2">

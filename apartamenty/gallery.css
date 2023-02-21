@@ -17,7 +17,7 @@ h2 a {
 	align-items: center;
 }
 
-.rooms {
+.menu-tabs {
 	display: flex;
 	justify-content: space-around;
 	list-style: none;
@@ -27,7 +27,7 @@ h2 a {
 }
 
 @media screen and (max-width: 824px) {
-	.rooms {
+	.menu-tabs {
 		display: block;
 	}
 }
@@ -65,6 +65,12 @@ h2 a {
 	}
 	
   }
+
+  .active-tab {
+	color: #3dc9b3;
+  }
+
+
 /* ----- slider ---- */
 .slider {
 	position: relative;
