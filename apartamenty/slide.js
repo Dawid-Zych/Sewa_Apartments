@@ -156,4 +156,8 @@ class Slider {
 	}
 }
 
-const slide = new Slider('#slider1');
+const slide1 = new Slider('#slider1');
+const slide2 = new Slider('#slider2');
+const slide3 = new Slider('#slider3');
+const slide4 = new Slider('#slider4');
+const slide5 = new Slider('#slider5');
