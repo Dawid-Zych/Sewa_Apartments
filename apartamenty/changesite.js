@@ -25,7 +25,7 @@ function stickyHeader() {
 const menuSection = document.querySelectorAll('.tab-content');
 const menuSlides = document.querySelectorAll('.elements-list');
 const menuTabs = document.querySelectorAll('li>a');
-console.log(menuTabs);
+
 const showInfo = (id, id2) => {
 	menuSection.forEach((section) => (section.style.display = 'none'));
 	menuSlides.forEach((slides) => (slides.style.display = 'none'));
@@ -35,6 +35,21 @@ const showInfo = (id, id2) => {
 	document.getElementById(id2).style.display = 'block';
 
 	const currentActiveTab = document.querySelector(`[data-id=${id2}]`);
-	console.log(currentActiveTab);
 	currentActiveTab.classList.add('active-tab');
+};
+
+window.onload = function () {
+	const currentPage = document.URL;
+
+	if (currentPage.includes('apartamenty/#tabs-1')) {
+		showInfo('slider1', 'first-tab');
+	} else if (currentPage.includes('apartamenty/#tabs-2')) {
+		showInfo('slider2', 'second-tab');
+	} else if (currentPage.includes('apartamenty/#tabs-3')) {
+		showInfo('slider3', 'third-tab');
+	} else if (currentPage.includes('apartamenty/#tabs-4')) {
+		showInfo('slider4', 'fourth-tab');
+	} else if (currentPage.includes('apartamenty/#tabs-5')) {
+		showInfo('slider5', 'fifth-tab');
+	}
 };
