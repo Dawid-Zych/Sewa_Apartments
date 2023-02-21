@@ -65,3 +65,29 @@ const showNav = () => {
 	}
 };
 hambBtn.addEventListener('click', showNav);
+
+// reservation online yieldplanet
+const reservation = document.querySelector('.reservation');
+const modal = document.querySelector('.modal');
+
+reservation.addEventListener('click', () => {
+	modal.classList.add('active');
+	document.body.classList.add('modal-backdrop');
+});
+
+const listenerDocument = (e) => {
+	if (e.key === 'Escape' || e.target.className === 'modal active') {
+		modal.classList.remove('active');
+		document.body.classList.remove('modal-backdrop');
+	}
+};
+modal.addEventListener('click', listenerDocument);
+document.addEventListener('keydown', listenerDocument);
+// close reservation field
+
+const closeModal = document.querySelector('.close');
+
+closeModal.addEventListener('click', () => {
+	modal.classList.remove('active');
+	document.body.classList.remove('modal-backdrop');
+});
