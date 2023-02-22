@@ -175,6 +175,9 @@ a:hover {
 }
 
 @media screen and (max-width: 824px) {
+	.gallery {
+		display: block;
+	}
 	.container img {
 		height: 100px;
 	}
