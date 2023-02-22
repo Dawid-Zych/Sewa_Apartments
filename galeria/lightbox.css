@@ -179,7 +179,8 @@ a:hover {
 		display: block;
 	}
 	.container img {
-		height: 100px;
+		object-fit: cover;
+		height: 200px;
 	}
 }
 #lightbox {
