@@ -22,6 +22,44 @@ function stickyHeader() {
 	}
 }
 
+// nav responsywne na btn
+const hambBtn = document.querySelector('.fa-bars');
+const icon = document.querySelector('.hamburger-menu');
+const showNav = () => {
+	if (icon.style.display === 'none') {
+		icon.style.display = 'block';
+	} else {
+		icon.style.display = 'none';
+	}
+};
+hambBtn.addEventListener('click', showNav);
+
+// reservation online yieldplanet
+const reservation = document.querySelector('.reservation');
+const modal = document.querySelector('.modal');
+
+reservation.addEventListener('click', () => {
+	modal.classList.add('active');
+	document.body.classList.add('modal-backdrop');
+});
+
+const listenerDocument = (e) => {
+	if (e.key === 'Escape' || e.target.className === 'modal active') {
+		modal.classList.remove('active');
+		document.body.classList.remove('modal-backdrop');
+	}
+};
+modal.addEventListener('click', listenerDocument);
+document.addEventListener('keydown', listenerDocument);
+// close reservation field
+
+const closeModal = document.querySelector('.close');
+
+closeModal.addEventListener('click', () => {
+	modal.classList.remove('active');
+	document.body.classList.remove('modal-backdrop');
+});
+
 // SLIDER NA Flexie
 const selectAll = (selector) => document.querySelectorAll(selector);
 const select = (selector) => document.querySelector(selector);
@@ -109,45 +147,7 @@ selectAll('.section3').forEach(() => {
 	});
 
 	// interwał na autoslide
-	const interval = setInterval(next, 4000);
-});
-
-// nav responsywne na btn
-const hambBtn = document.querySelector('.fa-bars');
-const icon = document.querySelector('.hamburger-menu');
-const showNav = () => {
-	if (icon.style.display === 'none') {
-		icon.style.display = 'block';
-	} else {
-		icon.style.display = 'none';
-	}
-};
-hambBtn.addEventListener('click', showNav);
-
-// reservation online yieldplanet
-const reservation = document.querySelector('.reservation');
-const modal = document.querySelector('.modal');
-
-reservation.addEventListener('click', () => {
-	modal.classList.add('active');
-	document.body.classList.add('modal-backdrop');
-});
-
-const listenerDocument = (e) => {
-	if (e.key === 'Escape' || e.target.className === 'modal active') {
-		modal.classList.remove('active');
-		document.body.classList.remove('modal-backdrop');
-	}
-};
-modal.addEventListener('click', listenerDocument);
-document.addEventListener('keydown', listenerDocument);
-// close reservation field
-
-const closeModal = document.querySelector('.close');
-
-closeModal.addEventListener('click', () => {
-	modal.classList.remove('active');
-	document.body.classList.remove('modal-backdrop');
+	const interval = setInterval(next, 6000);
 });
 
 // form validation and send msg

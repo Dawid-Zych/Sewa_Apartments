@@ -1,22 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link rel="stylesheet" href="lightbox.css" />
+		<link rel="canonical" href="https://sewa-apartamenty.netlify.app/galeria/" />
+		<link rel="shortcut icon" href="/picture/favicon.png" />
+		<title>SEWA-APARTAMENTY - twoje noclegi w Krakowie. - Galeria</title>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
 			rel="stylesheet"
 		/>
 		<script src="https://kit.fontawesome.com/de05f8354b.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="galeria.css" />
+		<link rel="stylesheet" href="/style.css" />
 	</head>
 	<body>
 		<div class="nav-bar">
 			<div class="header" id="header">
 				<div class="menu-left">
-					<a href="/apartamenty/">Apartamenty</a>
+					<a href="/apartamenty/#tabs-1">Apartamenty</a>
 					<a href="#">Galeria Zdjęć</a>
 				</div>
 				<div class="logo">
@@ -66,7 +69,7 @@
 				/>
 				<i class="fa fa-bars"> </i>
 				<div class="hamburger-menu" style="display: none">
-					<a class="links" href="/apartamenty/">Apartamenty</a>
+					<a class="links" href="/apartamenty/#tabs-1">Apartamenty</a>
 					<a class="links" href="#">Galeria Zdjęć</a>
 					<a class="links" href="/#dojazd">Dojazd</a>
 					<div class="container2">
@@ -100,8 +103,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="content">
-			<div class="container">
+		<div class="container">
+			<div class="galleryBox">
 				<h2>SEWA</h2>
 				<div class="gallery">
 					<img src="SEWA/sewa-1.jpg" alt="" />
@@ -110,7 +113,7 @@
 					<img src="SEWA/sewa-4.jpg" alt="" />
 				</div>
 			</div>
-			<div class="container">
+			<div class="galleryBox">
 				<h2>SEWA I</h2>
 				<div class="gallery">
 					<img src="SEWA I/sewa-1.jpg" alt="" />
@@ -119,7 +122,7 @@
 					<img src="SEWA I/sewa-4.jpg" alt="" />
 				</div>
 			</div>
-			<div class="container">
+			<div class="galleryBox">
 				<h2>SEWA II</h2>
 				<div class="gallery">
 					<img src="SEWA II/sewaII-1.jpg" alt="" />
@@ -128,7 +131,7 @@
 					<img src="SEWA II/sewaII-4.jpg" alt="" />
 				</div>
 			</div>
-			<div class="container">
+			<div class="galleryBox">
 				<h2>SEWA IV</h2>
 				<div class="gallery">
 					<img src="SEWA IV/sewaiV-1.jpg" alt="" />
@@ -139,7 +142,7 @@
 					<img src="SEWA IV/sewaiV-6.jpg" alt="" />
 				</div>
 			</div>
-			<div class="container">
+			<div class="galleryBox">
 				<h2>SEWA MINI</h2>
 				<div class="gallery">
 					<img src="SEWA MINI/sewaMini-1.jpg" alt="" />
@@ -147,27 +150,30 @@
 					<img src="SEWA MINI/sewaMini-3.jpg" alt="" />
 				</div>
 			</div>
+			<div class="section8">
+				<div class="section8-left">
+					<img class="x-img" src="/picture/logobiale.png" />
+				</div>
+				<div class="section8-right">
+					<p>
+						<b>Kontakt</b><br />
+						<b>T:</b> +48 609 290 419<br />
+						<b>E: </b><a href="mailto:apartamenty@sewa.pl">apartamenty@sewa.pl</a><br />
+						31-009 Kraków<br />
+						ul. Szewska 12
+					</p>
+				</div>
+			</div>
+			<footer>
+				<div class="copyright">
+					Wszelkie prawa zastrzeżone przez Sewa Apartamenty © 2023
+				</div>
+				<div class="author">
+					<p>Projekt i wykonanie:<span class="name">Dawid Zych</span></p>
+				</div>
+			</footer>
 		</div>
-		<div class="section8">
-			<div class="section8-left">
-				<img class="x-img" src="/picture/logobiale.png" />
-			</div>
-			<div class="section8-right">
-				<p>
-					<b>Kontakt</b><br />
-					<b>T:</b> +48 609 290 419<br />
-					<b>E: </b><a href="mailto:apartamenty@sewa.pl">apartamenty@sewa.pl</a><br />
-					31-009 Kraków<br />
-					ul. Szewska 12
-				</p>
-			</div>
-		</div>
-		<footer>
-			<div class="copyright">Wszelkie prawa zastrzeżone przez Sewa Apartamenty © 2023</div>
-			<div class="author">
-				<p>Projekt i wykonanie:<span class="name">Dawid Zych</span></p>
-			</div>
-		</footer>
-		<script src="lightbox.js"></script>
+
+		<script src="galeria.js"></script>
 	</body>
 </html>
