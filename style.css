@@ -712,7 +712,8 @@ form {
 	border-radius: 5px;
 }
 
-.field-control input.error {
+.field-control input.error,
+.field-control textarea.error {
 	border: 1px solid red;
 }
 
