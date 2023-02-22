@@ -172,14 +172,14 @@ a:hover {
 	cursor: pointer;
 	width: 100%;
 	height: 300px;
+	object-fit: cover;
 }
 
 @media screen and (max-width: 824px) {
 	.gallery {
 		display: block;
 	}
-	.container img {
-		object-fit: cover;
+	.gallery img {	
 		height: 200px;
 	}
 }
