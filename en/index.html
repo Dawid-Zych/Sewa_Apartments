@@ -4,175 +4,257 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Sewa Apartamenty</title>
-		<link rel="stylesheet" href="/style.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="canonical" href="https://sewa-apartamenty.netlify.app/" />
+		<link rel="shortcut icon" href="/picture/favicon.png" />
+		<title>
+			SEWA-APARTAMENTY - twoje noclegi w Krakowie. W centrum miasta na ul. Szewskiej 12
+		</title>
+		<meta
+			name="google-site-verification"
+			content="CsdNIFIk9qqVvymsWA0Wx-3fzMj0ahAt61tWNeREhPA"
+		/>
+		<meta
+			name="description"
+			content="SEWA-Apartamenty to nowoczesne i komfortowe apartamenty położone w ścisłym centrum Krakowa na ul Szewskiej 12, będącą doskonałą lokalizacją do zwiedzania historycznych zabytków starego miasta. Zaledwie 2 minuty od przystanku komunikacyjnego, a 15 minut od dworca autobusowego. Od nas dojedziesz w każde miejsce. Pomagamy w zamówieniu taksówki, a także zakupie wycieczek zorganizowanych."
+		/>
+		<meta
+			name="robots"
+			content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+		/>
+
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
 			rel="stylesheet"
 		/>
 		<script src="https://kit.fontawesome.com/de05f8354b.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="/style.css" />
 	</head>
 	<body>
-		<div class="header" id="header">
-			<div class="menu-left">
-				<a href="">Apartments</a>
-				<a href="">Gallery</a>
-			</div>
-			<div class="logo">
-				<img class="logoPct" src="/picture/logo.png" alt="logo apartaments" />
-			</div>
-			<div class="menu-right">
-				<a href="#dojazd">Drive</a>
-				<a href="#kontakt">Contact</a>
-				<div class="icons">
-					<a
-						href="https://www.facebook.com/profile.php?id=100057208789611"
-						target="_blank"
-					>
-						<img
-							class="icon"
-							src="/picture/2021_Facebook_icon.svg.png"
-							alt="Ikona Facebooka"
-					/></a>
-					<div class="language">
-						<a href="../"
-							><img
-								src="/picture/National_Flag_of_Poland.png"
-								alt="Flaga Polski"
-								class="icon iconFlag"
+		<div class="nav-bar">
+			<div class="header" id="header">
+				<div class="menu-left">
+					<a href="/apartamenty/#tabs-1">Apartments</a>
+					<a href="galeria/">Gallery</a>
+				</div>
+				<div class="logo">
+					<img
+						class="logo-picture"
+						src="/picture/logo.png"
+						alt="Accommodation Krakow, apartments, accommodation in Krakow, apartments in Krakow, accommodation, Krakow"
+					/>
+				</div>
+				<div class="menu-right">
+					<a href="#dojazd">Drive</a>
+					<a href="#kontakt">Contact</a>
+					<div class="icons">
+						<a
+							href="https://www.facebook.com/profile.php?id=100057208789611"
+							target="_blank"
+						>
+							<img
+								class="icon"
+								src="/picture/2021_Facebook_icon.svg.png"
+								alt="Facebook icon"
 						/></a>
-						<a href=""
-							><img
-								src="/picture/National_Flag_of_UK.png"
-								alt="Flaga Wielkiej Brytanii"
-								class="icon iconFlag"
-						/></a>
+						<div class="language">
+							<a href="/"
+								><img
+									src="/picture/National_Flag_of_Poland.png"
+									alt="flag of poland"
+									class="icon iconFlag"
+							/></a>
+							<a href="#"
+								><img
+									src="/picture/National_Flag_of_UK.png"
+									alt="flag of united kingdom"
+									class="icon iconFlag"
+							/></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hamburger">
+				<img
+					class="mobilelogo"
+					src="/picture/logo.png"
+					alt="Accommodation Krakow, apartments, accommodation in Krakow, apartments in Krakow, accommodation, Krakow"
+				/>
+				<i class="fa fa-bars"> </i>
+				<div class="hamburger-menu" style="display: none">
+					<a class="links" href="/apartamenty/#tabs-1">Apartments</a>
+					<a class="links" href="/galeria/">Gallery</a>
+					<a class="links" href="#dojazd">Drive</a>
+					<div class="container2">
+						<a class="links" href="#kontakt">Contact</a>
+						<div class="icons mobile">
+							<a
+								href="https://www.facebook.com/profile.php?id=100057208789611"
+								target="_blank"
+							>
+								<img
+									class="icon"
+									src="/picture/2021_Facebook_icon.svg.png"
+									alt="Ikona Facebooka"
+							/></a>
+							<div class="language">
+								<a href="/"
+									><img
+										src="/picture/National_Flag_of_Poland.png"
+										alt="flag of Poland"
+										class="icon iconFlag"
+								/></a>
+								<a href="#"
+									><img
+										src="/picture/National_Flag_of_UK.png"
+										alt="flag of United Kingdom"
+										class="icon iconFlag"
+								/></a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="container">
 			<main class="content">
-				<div class="city-picture-container">
-					<img src="/picture/rynek.JPG" alt="Rynek i Sukiennice" class="city-picture" />
+				<div class="section1">
+					<img
+						src="/picture/rynek.JPG"
+						alt="Market Square and Cloth Hall Krakow"
+						class="city-picture"
+					/>
 				</div>
-				<div class="reservation-field">
+				<div class="section2">
 					<button class="reservation">Book - Check prices and availability</button>
+					<div class="modal">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close">X</button>
+									<h4 class="modal-title">Reservation</h4>
+								</div>
+								<div class="modal-body">
+									<iframe
+										id="reservField"
+										class="iframe"
+										src="https://secure.yieldplanet.com/Book/BookingEngine.aspx?hotelId=5143"
+									></iframe>
+								</div>
+								<div class="modal-footer"></div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="slider-wrapper">
+				<div class="section3">
 					<div class="slider">
-						<div class="item">
+						<div class="item" id="slide1">
 							<div class="picture-apartments">
 								<img
 									class="slide-picture"
-									src="/apartaments/SEWA/sewa-1.jpg"
-									alt=""
+									src="/galeria/SEWA/sewa-1.jpg"
+									alt="double bed, room for 4 persons"
 								/>
 							</div>
 							<div class="description">
 								<h2>SEWA</h2>
 								<p>
-									SEWA to nowoczesne i komfortowe studio (35 m2) położone na Ip.
-									budynku frontowego z oknami wychodzącymi na całoroczny zielony
-									ogródek. Wygodnie i w ciszy zamieszkają w nim nawet 4 osoby.
+									SEWA is a modern and comfortable studio (35 m2) located on the
+									Ip. of the front building with windows overlooking the
+									year-round greenery garden. Up to 4 people can live in it
+									comfortably and in silence.
 								</p>
-								<a href="">Zobacz więcej</a>
+								<a href="/apartamenty/#tabs-1">See more</a>
 							</div>
 						</div>
-						<div class="item">
+						<div class="item" id="slide2">
 							<div class="picture-apartments">
 								<img
 									class="slide-picture"
-									src="/apartaments/SEWA I/sewa-1.jpg"
-									alt=""
+									src="/galeria/SEWA I/sewa-1.jpg"
+									alt="table, door, room for up to 4 people"
 								/>
 							</div>
 							<div class="description">
 								<h2>SEWA I</h2>
 								<p>
-									Sewa I (35 m2) znajduje się na Ip. budynku oficyny. Całoroczny
-									zielony ogródek, balkon i panujący spokój zapewniają komfortowy
-									pobyt dla max. 4 osób. Na mieszkanie składają się: kuchnia
-									połączona.....
+									Sewa I (35 m2) is located on Ip. outbuilding. A year-round green
+									garden, balcony and peace ensure a comfortable stay for max. 4
+									people. The apartment consists of: kitchen connected.....
 								</p>
-								<a href="">Zobacz więcej</a>
+								<a href="/apartamenty/#tabs-2">See more</a>
 							</div>
 						</div>
-						<div class="item">
+						<div class="item" id="slide3">
 							<div class="picture-apartments">
 								<img
 									class="slide-picture"
-									src="/apartaments/SEWA II/sewaII-1.jpg"
-									alt=""
+									src="/galeria/SEWA II/sewaII-1.jpg"
+									alt="room, two single beds"
 								/>
 							</div>
 							<div class="description">
 								<h2>SEWA II</h2>
 								<p>
-									SEWA II (60 m2)położony jest na parterze budynku oficyny, co
-									umożliwia korzystanie z mieszkania także dla osób poruszających
-									się na wózku. Okna wychodzą na przez cały rok zielony ogródek.
-									Mimo.....
+									SEWA II (60 m2) is located on the ground floor of the
+									outbuilding, which allows the use of the apartment also for
+									people who move in a wheelchair. The windows overlook a green
+									garden all year round. Despite.....
 								</p>
-								<a href="">Zobacz więcej</a>
+								<a href="/apartamenty/#tabs-3">See more</a>
 							</div>
 						</div>
-						<div class="item">
+						<div class="item" id="slide4">
 							<div class="picture-apartments">
 								<img
 									class="slide-picture"
-									src="/apartaments/SEWA MINI/sewaMini-2.jpg"
-									alt=""
+									src="/galeria/SEWA MINI/sewaMini-2.jpg"
+									alt="view of the door, kitchenette, sofa"
 								/>
 							</div>
 							<div class="description">
 								<h2>SEWA MINI</h2>
 								<p>
-									Sewa MINI (19m2) znajduje się na Ip. budynku oficyny. Całoroczny
-									zielony ogródek, balkon i panujący spokój zapewniają komfortowy
-									pobyt dla max. 2 osób. Apartament składa się z sypialni z
-									rozkładaną.....
+									Sewa MINI (19m2) is located on IP. outbuilding. A year-round
+									green garden, balcony and peace ensure a comfortable stay for
+									max. 2 people. The apartment consists of a bedroom with ....
 								</p>
-								<a href="">Zobacz więcej</a>
+								<a href="/apartamenty/#tabs-5">See more</a>
 							</div>
 						</div>
-						<div class="item">
+						<div class="item" id="slide5">
 							<div class="picture-apartments">
 								<img
 									class="slide-picture"
-									src="/apartaments/SEWA IV/sewaiV-5.jpg"
-									alt=""
+									src="/galeria/SEWA IV/sewaiV-5.jpg"
+									alt="large living room, sofa, tv, table"
 								/>
 							</div>
 							<div class="description">
 								<h2>SEWA IV</h2>
 								<p>
-									Dwupoziomowy apartament urządzony w nowoczesnym, industrialnym
-									stylu, z widokiem na ogród. Dysponuje jadalnią i w pełni
-									wyposażoną kuchnią. Posiada dwie sypialnie i dwie łazienki.
-									Apartament przeznaczony jest do komfortowego wypoczynku.....
+									A two-level apartment decorated in a modern, industrial style
+									style, overlooking the garden. It has a dining area and fully
+									equipped kitchen. It has two bedrooms and two bathrooms. The
+									apartment is designed for comfortable rest.....
 								</p>
-								<a href="">Zobacz więcej</a>
+								<a href="/apartamenty/#tabs-4">See more</a>
 							</div>
 						</div>
 					</div>
 					<div class="buttons-arrow">
-						<img src="/picture/next.png" class="fa-chevron right" alt="" />
+						<img src="/picture/next.png" class="fa-chevron right" alt="next picture" />
 
-						<img src="/picture/prev.png" class="fa-chevron left" alt="" />
+						<img src="/picture/prev.png" class="fa-chevron left" alt="prev picture" />
 					</div>
-					<!-- <div class="buttons-slidebar">
-						<p><i class="fa-regular fa-circle active"></i></p>
-						<p><i class="fa-regular fa-circle"></i></p>
-						<p><i class="fa-regular fa-circle"></i></p>
-						<p><i class="fa-regular fa-circle"></i></p>
-						<p><i class="fa-regular fa-circle"></i></p>
-					</div> -->
+					<div class="buttons-slidebar">
+						<p><i class="fa-regular fa-circle active2" id="slide1circle"></i></p>
+						<p><i class="fa-regular fa-circle" id="slide2circle"></i></p>
+						<p><i class="fa-regular fa-circle" id="slide3circle"></i></p>
+						<p><i class="fa-regular fa-circle" id="slide4circle"></i></p>
+						<p><i class="fa-regular fa-circle" id="slide5circle"></i></p>
+					</div>
 				</div>
-
-				<div class="about">
+				<div class="section4">
 					<div class="text">
 						<h2>About us</h2>
 						<div class="about-text">
@@ -199,25 +281,25 @@
 						</div>
 					</div>
 					<div class="courtyard">
-						<div class="obj p1"></div>
-						<div class="obj p2"></div>
-						<div class="obj p3"></div>
-						<div class="obj p4"></div>
+						<div class="obj p1" style="height: 299px; width: 299px"></div>
+						<div class="obj p2" style="height: 299px; width: 299px"></div>
+						<div class="obj p3" style="height: 299px; width: 299px"></div>
+						<div class="obj p4" style="height: 299px; width: 299px"></div>
 						<div style="clear: both"></div>
 					</div>
 					<div style="clear: both"></div>
 				</div>
 				<div class="section5">
-					<div class="column">
-						<img src="/picture/wifi2.png" alt="" />
+					<div class="column" role="button">
+						<img src="/picture/wifi2.png" alt="wifi icon" />
 						<div class="text5"><p>free WiFi</p></div>
 					</div>
-					<div class="column">
-						<img src="/picture/pokojer.png" alt="" />
+					<div class="column" role="button">
+						<img src="/picture/pokojer.png" alt="family icon" />
 						<div class="text5"><p>family rooms</p></div>
 					</div>
-					<div class="column">
-						<img src="/picture/animal.png" alt="" />
+					<div class="column" role="button">
+						<img src="/picture/animal.png" alt="dog icon" />
 						<div class="text5">
 							<p>
 								pets <br />
@@ -225,67 +307,84 @@
 							</p>
 						</div>
 					</div>
-					<div class="column">
-						<img src="/picture/invalid.png" alt="" />
+					<div class="column" role="button">
+						<img src="/picture/invalid.png" alt="disabled icon" />
 						<div class="text5"><p>facilities for the disabled</p></div>
 					</div>
 				</div>
 				<div class="section6"></div>
-				<div class="section7-form">
+				<div class="section7-form" id="kontakt">
 					<h2>Write to us</h2>
-					<div class="x-container">
-						<form id="form " action="" method="post" novalidate>
-							<div class="field-control">
-								<input
-									type="text"
-									id="name"
-									placeholder="Name and Surrname"
-									required
-								/>
-								<p class="error-text">error</p>
-							</div>
-							<div class="field-control">
-								<input
-									type="email"
-									id="email"
-									placeholder="Email address"
-									size="40"
-									required
-								/>
-								<p class="error-text">error</p>
-							</div>
-							<div class="field-control">
-								<input
-									type="tel"
-									id="phone"
-									placeholder="Phone number"
-									size="40"
-									required
-								/>
-								<p class="error-text">error</p>
-							</div>
-							<div class="field-control">
-								<textarea
-									name="your-message"
-									cols="40"
-									rows="10"
-									aria-invalid="false"
-									placeholder="Text messege"
-								></textarea>
-								<p class="error-text">error</p>
-							</div>
-						</form>
-						<div class="submitBtn">
-							<button class="submit" type="submit">wyślij</button>
-							<p class="error-text">error</p>
+					<form
+						id="form "
+						form
+						action="https://formsubmit.co/05a3afc36dbedcc629ca9debdb13c247"
+						method="POST"
+					>
+						<div class="field-control">
+							<p class="check">Give me your first and last name</p>
+							<input
+								type="text"
+								id="username"
+								name="username"
+								placeholder="Name and Surrname"
+								required
+							/>
 						</div>
-					</div>
+						<div class="field-control">
+							<p class="check">Email is invalid</p>
+							<input
+								type="email"
+								id="email"
+								name="email"
+								placeholder="Email address"
+								size="40"
+								required
+							/>
+						</div>
+						<div class="field-control">
+							<p class="check">The phone number provided is incorrect</p>
+							<input
+								type="tel"
+								id="phone"
+								name="phone"
+								placeholder="Phone number"
+								size="40"
+								required
+							/>
+						</div>
+						<div class="field-control last">
+							<p class="check">This field cannot be empty</p>
+							<textarea
+								id="message"
+								name="message"
+								cols="40"
+								rows="10"
+								aria-invalid="false"
+								placeholder="Text messege"
+							></textarea>
+						</div>
+						<input class="submitBtn" type="submit" value="Send" />
+						<input
+							type="hidden"
+							name="_next"
+							value="https://sewa-apartamenty.netlify.app/thankYou"
+						/>
+						<input type="hidden" name="_template" value="box" />
+						<input
+							type="hidden"
+							name="_autoresponse"
+							value="Dziekujemy za wysłanie wiadomości. Postaramy się odpowiedzieć jak najszybciej. Sewa Apartamenty."
+						/>
+						<input type="text" name="_honey" style="display: none" />
+						<input type="hidden" name="_captcha" value="false" />
+					</form>
 				</div>
-				<div class="section-8">
-					<div class="section-8-left">
-						<img class="x-img" src="/picture/logobiale.png" />
+				<div class="section8">
+					<div class="section8-left">
+						<img class="x-img" src="/picture/logobiale.png" alt="white logo" />
 					</div>
-					<div class="section-8-right">
+					<div class="section8-right">
 						<p>
 							<b>Contact</b><br />
 							<b>T:</b> +48 609 290 419<br />
@@ -296,7 +395,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="drive">
+				<div class="drive" id="dojazd">
 					<h2>Drive</h2>
 					<p>
 						Access by car to the apartments (ul. Szewska 12) is possible only from
@@ -307,6 +406,7 @@
 						<iframe
 							src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10245.086333906796!2d19.9345515!3d50.0624753!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xad1ee3acc92d5008!2sSewa.%20Apartamenty!5e0!3m2!1spl!2spl!4v1574414110313!5m2!1spl!2spl"
 							style="border: 0"
+							name="bottom"
 							allowfullscreen=""
 							width="600"
 							height="450"
@@ -322,7 +422,6 @@
 				</footer>
 			</main>
 		</div>
-
 		<script src="/app.js"></script>
 	</body>
 </html>
