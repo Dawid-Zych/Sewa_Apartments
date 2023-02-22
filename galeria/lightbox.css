@@ -1,0 +1,303 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.nav-bar {
+	display: flex;
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+	margin: 20px;
+	font-size: 16px;
+	color: black;
+}
+
+a:hover {
+	color: #3dc9b3;
+}
+
+.header {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	font-weight: 500;
+	transition: all 0.5s ease;
+	min-height: 147px;
+	top: 0;
+	width: 100%;
+}
+
+.header .menu-left,
+.header .menu-right {
+	display: flex;
+	text-transform: uppercase;
+	flex-wrap: wrap;
+	width: 40%;
+	align-items: center;
+}
+
+.header .menu-left {
+	margin-left: 20px;
+	justify-content: center;
+}
+
+.header .menu-right {
+	margin-right: 20px;
+	justify-content: flex-end;
+}
+
+.header .logo {
+	z-index: 3;
+	margin: 10px;
+	width: 20%;
+	text-align: center;
+	justify-content: center;
+}
+
+.header .logo-picture {
+	width: 200px;
+	transition: width 0.7s;
+	cursor: pointer;
+}
+
+.icons {
+	display: flex;
+}
+.icon {
+	width: 30px;
+}
+
+.iconFlag {
+	border: 1px solid black;
+}
+
+.language {
+	display: flex;
+	align-items: center;
+	justify-content: end;
+}
+
+.hamburger {
+	display: none;
+	justify-content: space-between;
+	flex-direction: column;
+	z-index: 3;
+	top: 0;
+	transition: all 0.5s ease;
+}
+
+.hamburger .fa-bars {
+	cursor: pointer;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	font-size: 30px;
+}
+
+.hamburger .fa-bars:hover {
+	color: #353535;
+}
+
+.hamburger .mobilelogo {
+	width: 100px;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.hamburger .links {
+	display: flex;
+	margin: 0 10px;
+}
+
+.hamburger .hamburger-menu {
+	display: none;
+	flex-direction: column;
+	margin: 0;
+}
+
+.hamburger .container2 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.hamburger .icons a {
+	padding: 0;
+	margin: 0;
+	margin-right: 10px;
+}
+
+@media screen and (max-width: 824px) {
+	.header {
+		display: none;
+	}
+	.hamburger {
+		display: flex;
+	}
+}
+/* END OF HEADER*/
+
+.content {
+	display: block;
+	margin: 0;
+	padding: 20px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-content: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.container h2 {
+	margin-bottom: 10px;
+}
+
+.gallery {
+	display: flex;
+	float: left;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.gallery img {
+	padding: 10px;
+	cursor: pointer;
+	width: 100%;
+	height: 300px;
+}
+
+@media screen and (max-width: 824px) {
+	.container img {
+		height: 100px;
+	}
+}
+#lightbox {
+	position: fixed;
+	display: none;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+#lightbox.active {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#lightbox img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.section8 {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	margin: 0px;
+	padding: 45px 0px;
+	background-color: hsl(0, 0%, 39%);
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	transition: all 0.5s ease;
+}
+
+.section8-left {
+	background-color: hsl(0, 0%, 39%);
+}
+.section8-left .x-img {
+	background-color: hsl(0, 0%, 39%);
+	max-width: 155px;
+}
+
+.section8-right {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 300;
+	padding-left: 10px;
+	line-height: 32px;
+	background-color: hsl(0, 0%, 39%);
+}
+
+.section8-right p {
+	background-color: hsl(0, 0%, 39%);
+	margin: 0 0 1.313em;
+	justify-items: left;
+}
+
+.section8-right b {
+	background-color: hsl(0, 0%, 39%);
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.section8-right a {
+	margin: 0;
+	text-decoration: none;
+	background-color: transparent;
+	color: #fff;
+}
+
+.section8-right a:hover {
+	outline: 0;
+	color: #3dc9b3;
+}
+
+@media screen and (max-width: 824px) {
+	.section8 {
+		flex-direction: column;
+	}
+}
+
+footer {
+	display: flex;
+	font-size: 15px;
+	text-align: center;
+	color: #7a7a7a;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 88%;
+	background-color: #f3f3f3;
+	width: 100%;
+}
+
+.copyright {
+	font-size: 13px;
+	color: #4a4a4a;
+	background-color: #f3f3f3;
+}
+
+.author {
+	display: flex;
+	font-size: 13px;
+	color: #4a4a4a;
+	background-color: #f3f3f3;
+}
+
+.author p {
+	background-color: #f3f3f3;
+}
+.name {
+	font-weight: bold;
+	margin-left: 5px;
+	background-color: #f3f3f3;
+}
+
+@media screen and (max-width: 824px) {
+	footer {
+		flex-direction: column;
+		align-items: center;
+	}
+}
