@@ -549,22 +549,22 @@ z-index move it on slider */
 }
 
 .obj.p1 {
-	background: url(apartaments/courtyard-1.jpg);
+	background: url(galeria/courtyard-1.jpg);
 	background-size: cover;
 }
 
 .obj.p2 {
-	background: url(apartaments/courtyard-2.jpg);
+	background: url(galeria/courtyard-2.jpg);
 	background-size: cover;
 }
 
 .obj.p3 {
-	background: url(apartaments/courtyard-3.jpg);
+	background: url(galeria/courtyard-3.jpg);
 	background-size: cover;
 }
 
 .obj.p4 {
-	background: url(apartaments/courtyard-4.jpg);
+	background: url(galeria/courtyard-4.jpg);
 	background-size: cover;
 }
 
