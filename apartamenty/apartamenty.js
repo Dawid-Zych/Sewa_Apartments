@@ -208,15 +208,15 @@ const showInfo = (id, id2) => {
 window.onload = function () {
 	const currentPage = document.URL;
 
-	if (currentPage.includes('apartamenty/#tabs-1')) {
+	if (currentPage.includes('#tabs-1')) {
 		showInfo('slider1', 'first-tab');
-	} else if (currentPage.includes('apartamenty/#tabs-2')) {
+	} else if (currentPage.includes('#tabs-2')) {
 		showInfo('slider2', 'second-tab');
-	} else if (currentPage.includes('apartamenty/#tabs-3')) {
+	} else if (currentPage.includes('#tabs-3')) {
 		showInfo('slider3', 'third-tab');
-	} else if (currentPage.includes('apartamenty/#tabs-4')) {
+	} else if (currentPage.includes('#tabs-4')) {
 		showInfo('slider4', 'fourth-tab');
-	} else if (currentPage.includes('apartamenty/#tabs-5')) {
+	} else if (currentPage.includes('#tabs-5')) {
 		showInfo('slider5', 'fifth-tab');
 	}
 };
