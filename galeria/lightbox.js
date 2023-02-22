@@ -41,3 +41,15 @@ class LightBox {
 }
 
 const lightBox = new LightBox();
+
+// nav responsywne na btn
+const hambBtn = document.querySelector('.fa-bars');
+const icon = document.querySelector('.hamburger-menu');
+const showNav = () => {
+	if (icon.style.display === 'none') {
+		icon.style.display = 'block';
+	} else {
+		icon.style.display = 'none';
+	}
+};
+hambBtn.addEventListener('click', showNav);
